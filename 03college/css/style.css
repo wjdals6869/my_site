@@ -1,0 +1,17 @@
+@charset "utf-8";
+header#header{height: 160px;}
+
+#contents{
+	height: 1300px;
+	background-image:url(../images/00bg_dot.gif), url(../images/00main_bg01.jpg);
+	background-repeat: repeat,no-repeat;
+	background-position:center;
+	background-size:auto, cover;
+}
+#contents .title{
+	width: 1200px;height: 200px;
+	background:blue;margin:auto;}
+
+footer#footer{
+	height: 200px;
+}
