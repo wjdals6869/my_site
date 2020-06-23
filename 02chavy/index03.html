@@ -62,14 +62,21 @@
 		.visual .visualTxt p{margin-bottom: 30px;}
 		.visual .visualTxt a{display: block;width: 200px;height: 60px;background:#2c2c96;color: white;border-radius:40px;text-align: center;line-height: 60px;}
 		.txt{height: 250px;background:#f8f9ff;text-align: center;}
-		.container{height: 1000px;k}
+		.txt h1{padding-top: 65px;}
+		.txt p{padding-top: 20px;}
+		.container{width: 1200px;height: 1000px;margin: 0 auto;position: relative;}
+		.container .txtWrap{float: left;background:linen;position: absolute;top: 50%;}
+		.container .boxWrap{width: 450px;height: 510px;float: right;background-color:pink;position: relative;}
+		.container .box1{width: 210px;height: 240px;background-color:red;position: absolute;top: 0;left: 0;}
+		.container .box2{width: 210px;height: 240px;background-color:blue;position: absolute;top: 0;right: 0;}
+		.container .box3{width: 210px;height: 240px;background-color:green;position: absolute;bottom: 0;left: 0;}
+		.container .box4{width: 210px;height: 240px;background-color:yellow;position: absolute;bottom: 0;right: 0;}
 	</style>
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider();
 		});
 	</script>
-	.
 </head>
 <body>
 	<header id="header">
@@ -125,8 +132,32 @@
 	</div>
 	<div class="txt">
 		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, culpa?</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, animi.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Velit, animi.</p>
 	</div>
-	<div class="container"></div>
+	<div class="container">
+		<div class="txtWrap">
+			<h2>The proper guide that helps<br>you to unlock the real<br>potential.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit. Quam libero eveniet officia?<br>Reiciendis hic blanditiis.</p>
+			<a href="#" class="btnB">Request Demo</a>
+		</div>
+		<div class="boxWrap">
+			<div class="box1">
+				<img src="" alt="">
+				Registration<br>Guide
+			</div>
+			<div class="box2">
+				<img src="" alt="">
+				Live Call<br>Support
+			</div>
+			<div class="box3">
+				<img src="" alt="">
+				Secured<br>Payment
+			</div>
+			<div class="box4">
+				<img src="" alt="">
+				Track Your<br>Move
+			</div>
+		</div>
+	</div>
 </body>
 </html>
