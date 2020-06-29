@@ -121,8 +121,7 @@ clearfix는 다음번부터 float를 해제할 수 있는 기능*/
 	background:gray;margin:auto;
 	position: relative;
 }
-#contents .title .titleTxt{position: absolute;left: 80px;top: 70px;color:white;}
-#contents .title .titleTxt p{font-size:3em;}
+#contents .title .titleTxt{position: absolute;left: 80px;top: 70px;color:white;font-size:3em;background-color: red;}
 #contents .container{width: 1200px;margin:auto;}
 #contents .container>ul>li{float: left;width: 25%;height: 225px;}
 #contents .container>ul>li:nth-child(1){background: #f00; width: 75%;height: 450px;}
