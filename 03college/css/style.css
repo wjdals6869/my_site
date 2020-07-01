@@ -77,7 +77,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .viewSlider .sliderTxt a{
 	display: block;width: 160px;line-height: 40px;
 	font-size:initial;text-align: center;
-	border: 1px solid #000; background: #182c4d;
+	_border: 1px solid #000; background: #182c4d;
 	color:white;
 }
 
@@ -93,7 +93,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 	width: 150px;
 	right: 0;
 }
-
 /*box*/
 .boxTwo{position: relative;}
 .boxTwo .txtBox{
@@ -156,7 +155,18 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 	text-align: center;
 	background-color:rgba(0,0,0,0.5);
 	color:white;
+	margin-bottom: 20px;
 }
+.sliderThree{width: 1200px;height: 60px;margin: 0 auto;_background-color:white;padding-top: 30px;}
+
+.sliderThree .Wrap{width: 1200px;color:gray;background-color: #fff;position: relative;}
+.sliderThree .Wrap>li{float: left;}
+.sliderThree .Wrap .day{width: 300px;_background-color:red;float: left;line-height: 60px;text-align: center;}
+.sliderThree .Wrap .notice{float:right;width: 900px;}
+.tSlider .textSlider{color:#333}
+/*.sliderThree .button{position: absolute;right: 0;top: 0;}
+.sliderThree .button .up{position: absolute;top: 0;}
+.sliderThree .button .down{position: absolute;bottom: 0;}*/
 
 /*contents*/
 #contents{
@@ -193,7 +203,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 #contents .container>ul>li:nth-child(6){background: #f0f;}
 #contents .container>ul>li:nth-child(7){background: #fff;}
 #contents .container>ul>li:nth-child(8){background: #eee;width: 75%;}
-
 
 
 /*footer*/
