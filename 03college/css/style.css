@@ -2,7 +2,7 @@
 /*clearfix는 float를 싸용한 부모자에 꼭 넣어주기
 clearfix는 다음번부터 float를 해제할 수 있는 기능*/
 
-
+body{font-family: 'Noto Sans KR', sans-serif;}
 
 /*utilmenu*/
 .utilMenuWrap{background: #0044af;}
@@ -96,15 +96,65 @@ clearfix는 다음번부터 float를 해제할 수 있는 기능*/
 
 /*box*/
 .boxTwo{position: relative;}
-.boxTwo .boxTxt{
+.boxTwo .txtBox{
 	position: absolute;left: 50px;top: 80px;color:white;
 }
-.boxTwo .boxTxt h1{font-size:2em;}
-.boxTwo .boxTxt p{margin: 16px 0;}
-.boxTwo .boxTxt a{
+.boxTwo .txtBox h1{font-size:2em;}
+.boxTwo .txtBox p{margin: 16px 0;}
+.boxTwo .txtBox a{
 	display: block;width: 160px;line-height: 40px;
 	font-size:initial;text-align: center;
 	border: 1px solid #fff;background-color:rgba(0,0,0,0.5);
+	color:white;
+}
+.boxThree{}
+.boxThree .txt{
+	width: 260px;color:white;
+	margin-left: 22px;margin-top: 30px;margin-bottom: 30px;
+	_background-color: red;
+}
+.boxThree .iWrap{
+	width: 255px;color:white;
+	background-color:seagreen;margin: 0 auto;
+}
+.boxThree .iWrap a{
+	float: left;margin-left: 20px;
+	text-align: center;color:white;
+}
+.boxFour .txt{
+	width: 260px;
+	color:white;margin:30px 0 15px 22px;
+}
+.boxFour .box{
+	width: 260px;
+	border-bottom: 1px solid #fff;
+	margin: 0 auto;margin-bottom: 14px;
+}
+.boxFour>ul>li{margin-bottom: 8px;}
+.boxFour>ul>li>a{color:white;font-size:12px;}
+.boxFour .left{
+	float: left;margin-left: 22px;
+}
+.boxFour .right{
+	float: right;margin-right: 22px;
+}
+.boxFive .txt{
+	width: 260px;
+	color:#001a3c ;margin:30px 0 0 22px;
+}
+.boxFive ul{width: 260px;height: 130px;margin: 15px;position: relative;}
+.boxFive ul li.img{position: absolute;top: 0;left: 0;}
+.boxFive ul li.txtC{width: 125px;height: 80px;font-size:14px;position: absolute;top: 0;right: 0;}
+.boxFive ul li.icon{position: absolute;bottom: 0;right: 0;}
+.boxSix{position: relative;}
+.boxSix img{width: 100%;}
+.boxSix .tBox{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	line-height: 50px;
+	text-align: center;
+	background-color:rgba(0,0,0,0.5);
 	color:white;
 }
 
@@ -118,17 +168,28 @@ clearfix는 다음번부터 float를 해제할 수 있는 기능*/
 }
 #contents .title{
 	width: 1200px;height: 260px;
-	background:gray;margin:auto;
-	position: relative;
+	_background:gray;margin:auto;
 }
-#contents .title .titleTxt{position: absolute;left: 80px;top: 70px;color:white;font-size:3em;background-color: red;}
+#contents .title .titleTxt{
+	float: left;margin:65px 0;
+	color:white;font-size:3em;_background-color: red;
+}
+#contents .title ul{
+	float: right;margin:70px 0;
+	_background:yellow;
+}
+#contents .title ul>li{
+	float: left;display: block;_background:skyblue;
+	margin-left: 20px;text-align: center;color:white;
+}
+#contents .title ul>li>a{color:white;}
 #contents .container{width: 1200px;margin:auto;}
 #contents .container>ul>li{float: left;width: 25%;height: 225px;}
 #contents .container>ul>li:nth-child(1){background: #f00; width: 75%;height: 450px;}
 #contents .container>ul>li:nth-child(2){background: #0f0;height: 450px;}
-#contents .container>ul>li:nth-child(3){background: #00f;}
-#contents .container>ul>li:nth-child(4){background: #ff0;}
-#contents .container>ul>li:nth-child(5){background: #0ff;}
+#contents .container>ul>li:nth-child(3){background: #00163b;}
+#contents .container>ul>li:nth-child(4){background: #1651b7;}
+#contents .container>ul>li:nth-child(5){background: #fff;}
 #contents .container>ul>li:nth-child(6){background: #f0f;}
 #contents .container>ul>li:nth-child(7){background: #fff;}
 #contents .container>ul>li:nth-child(8){background: #eee;width: 75%;}
@@ -137,5 +198,11 @@ clearfix는 다음번부터 float를 해제할 수 있는 기능*/
 
 /*footer*/
 footer#footer{
-	height: 200px;
+	width: 1200px;height: 200px;
+	margin: 0 auto;_background-color:blue;
 }
+footer .txtWrap{
+	width: 900px;height: 200px;
+	float: right;_background-color:red;}
+footer .txtWrap .txt1{margin: 25px 0;color:#333;font-weight:bold;}
+footer .txtWrap .txt2{color:#333;}
