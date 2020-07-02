@@ -1,0 +1,29 @@
+@charset "utf-8";
+body{font-family: 'Noto Sans KR', sans-serif;}
+
+
+.utilMenuWrap{background: #0097e7;}
+
+/*utilMenu*/
+.utilMenu{width: 980px;height: 90px;margin: 0 auto;_background:gray;position: relative;}
+
+.utilMenu .logo{position: absolute;left: 0;}
+.utilMenu .logo a{display: block;width: 150px;line-height: 90px;color:white;font-size:1.5em;}
+
+.utilMenu .searchBar{_background-color:red;position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);}
+.utilMenu .searchBar ul{width: 290px;height: 30px;background: #fff;border-radius:15px;}
+.utilMenu .searchBar ul>li{float: left;}
+
+.utilMenu .menu{width: 300px;height: 90px;_background: #0f0;position: absolute;right: 0;}
+.utilMenu .menu ul{position: relative;}
+.utilMenu .menu ul>li.number{color:white;position: absolute;left: 0;top: 30px;}
+.utilMenu .menu ul>li.snsBtn{position: absolute;right: 0;top: 30px;}
+
+.mainGnb{background: #fff;border-bottom: 5px solid #0e73a7;}
+
+/*navWrap*/
+.navWrap{width: 980px;height: 60px;margin: 0 auto;}
+.navWrap ul{}
+.navWrap ul>li{float: left;/*문제야문제*//*border-right: 1px solid #000;*/}
+.navWrap ul>li>a{width: 163.33px;line-height: 60px;display: block;text-align: center;}
+.navWrap ul>li>a:hover{background: #0e73a7;color:white;}

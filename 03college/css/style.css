@@ -93,6 +93,13 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 	width: 150px;
 	right: 0;
 }
+.sliderTwo{position: relative;}
+.sliderTwo .linkBox{
+	position: absolute;top: 150px;left: 40px;
+	display: block;width: 180px;line-height: 40px;background-color: rgba(251,83,71,0.7);
+	text-align: center;border: 1px solid #fff;
+}
+.sliderTwo .linkBox a{color:white;}
 /*box*/
 .boxTwo{position: relative;}
 .boxTwo .txtBox{
@@ -155,7 +162,6 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 	text-align: center;
 	background-color:rgba(0,0,0,0.5);
 	color:white;
-	margin-bottom: 20px;
 }
 .sliderThree{width: 1200px;height: 60px;margin: 0 auto;
 	_background-color:magenta;padding:30px 0;position: relative;}
