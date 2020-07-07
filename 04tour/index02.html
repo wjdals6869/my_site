@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		html,body{height: 100%;}
+		body{
+			background: url(images/bg02.jpg) no-repeat center;
+			background-size:cover;
+			overflow-y:scroll;
+			overflow-x:hidden;
+		}
+		.wrap{position: absolute
+			;left:50%;top:50%;transform:translate(-50%,-50%);z-index:1;}
+		.searchTitle{display: block;width: 60px;height: 20px;background-image: url(images/searchtext.jpg);text-indent: -999px;position: absolute;top:15px;left:20px;z-index:2}
+		.searchInp{text-indent:90px;width: 400px;height:50px;border-radius:25px;border: 3px solid #000;font-weight:bold;font-size:18px;z-index:1;position: relative;}
+		.searchbtn{
+			width: 20px;height: 20px;
+			position: absolute;right:20px;top:50%;
+			transform:translateY(-50%);
+			background-image: url(images/search.jpg);
+			background-repeat: no-repeat;
+			border:0 none;
+			text-indent:-9999px;
+			cursor:pointer;
+			z-index:2;
+
+		}
+		.img01{
+			position: absolute;right:-100px;top:-100px;
+			animation-name:bal01;
+			animation-duration:3s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+			animation-timing-function:ease-in-out;
+		}
+		@keyframes bal01{
+			0%{transform:translateY(-20px);}
+			50%{transform:translateY(0px);}
+			100%{transform:translateY(-20px);}
+		}
+
+
+
+		.img00{
+			position: absolute;left:0px;bottom:0px;
+			animation-name:air01;
+			animation-duration:3s;
+			
+			animation-fill-mode: forwards;
+			animation-timing-function:linear;
+		}
+		@keyframes air01{
+			0%{left:0px;bottom:0px;}
+			100%{left:1800px;bottom:1000px;}
+	
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<img src="images/content2.png" alt="" class="img01">
+		<form action="">
+			<label for="serchText" class="searchTitle">SEARCH</label>
+			<input class="searchInp" type="search" name="search" placeholder="검색어를 입력하세요." id="serchText">
+			<button type="submit" class="searchbtn">button</button>
+		</form>
+		
+	</div>
+	<img src="images/reallyAir.png" alt="" class="img00">
+</body>
+</html>
