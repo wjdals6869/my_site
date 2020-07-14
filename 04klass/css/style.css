@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*header*/
+#header{width: 100%;}
+#header .hWrap{width: 1200px;margin: 0 auto;}
+#header .hWrap ul{}
+#header .hWrap ul li{}
+#header .hWrap ul li.logo{float: left;line-height: 136px;font-size:2em;}
+#header .hWrap ul li.gnbMenu{float: right;width: 360px;}
+#header .hWrap ul li.gnbMenu a{
+	float: left;display: block;text-align: center;width: 120px;line-height: 136px;
+}
+
+/*visual*/
+section#visual{width: 100%;height: 788px;}
+section#visual ul{width:1200px;height: 788px;margin: 0 auto;position: relative;}
+section#visual ul li{}
+section#visual ul li img.img{position: absolute;left: -121px;}
+section#visual ul li .visualTxt{position: absolute;top: 250px;width: 500px;}
+section#visual ul li .visualTxt h1{font-size:2.5em;margin-bottom: 50px;}
+section#visual ul li .visualTxt a{
+	font-weight:bold;font-size:1.2em;
+	display: block;width: 292px;height: 76px;
+	background: #444daa;color:#fff;
+	text-align: center;line-height: 76px;
+}
+
+ /*conOne*/
+section#conOne{width: 1200px;margin: 0 auto;padding: 140px 0;}
+section#conOne h1{font-size:3em;text-align: center;margin-bottom: 90px;}
+section#conOne ul{}
+section#conOne ul li{
+	float: left;margin-right: 31.5px;
+	box-shadow:0 20px 20px 0 rgba(133, 133, 133, 0.08);
+}
+section#conOne ul li:last-child{margin-right: 0;}
+
+/*conTwo*/
+section#conTwo{}
