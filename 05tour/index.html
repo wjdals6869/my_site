@@ -5,9 +5,20 @@
 	<meta charset="UTF-8">
 	<title>04 travel</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var slider01 = $(".slider01").bxSlider({
+				controls:false,
+				touchEnabled:false
+			});
+		});
+	</script>
 </head>
 <body>
 	<header id="headerWrap">
@@ -99,11 +110,6 @@
 												<div class="right">
 													<label for="num">성인</label>
 													<input type="num" id="num">
-													
-												</div>
-												<div class="right">
-													<label for="num">아이</label>
-													<input type="num" id="num">
 												</div>
 											</li>
 										</ul>
@@ -135,8 +141,46 @@
 			</div>
 			<div class="conWrapTwo">
 				<ul class="clearfix">
-					<li class="conOne"></li>
-					<li class="conTwo"></li>
+					<li class="conOne">
+						<ul class="slider01">
+							<li class="sliderLi">
+								<img src="images/img03_03.jpg" alt="" class="imgSlider">
+								<div>
+									<a href="#">
+										<h3>HILLTON HOTEL (PARIS)</h3>
+										<p><span>★★★</span>★★</p>
+									</a>
+								</div>
+							</li>
+							<li class="sliderLi">
+								<img src="images/img03_03.jpg" alt="" class="imgSlider">
+								<div>
+									<a href="#">
+										<h3>HILLTON HOTEL (PARIS)</h3>
+										<p><span>★★★</span>★★</p>
+									</a>
+								</div>
+							</li>
+							<li class="sliderLi">
+								<img src="images/img03_03.jpg" alt="" class="imgSlider">
+								<div>
+									<a href="#">
+										<h3>HILLTON HOTEL (PARIS)</h3>
+										<p><span>★★★</span>★★</p>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="conTwo">
+						<img src="images/img03_04.jpg" alt="">
+						<div>
+							<a href="#">
+								<h3>관광명소(디즈니랜드)</h3>
+								<p><span>★★★</span>★★</p>
+							</a>
+						</div>
+					</li>
 					<li class="conThree">
 						<h2>TOKYO</h2>
 						<div>
