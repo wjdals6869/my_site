@@ -14,9 +14,16 @@
 	<script>
 		$(document).ready(function(){
 			var slider01 = $(".slider01").bxSlider({
-				controls:false,
-				touchEnabled:false
+				controls:false		
 			});
+			$(".nextBtn").click(function(){
+				slider01.goToNextSlide();
+			});
+			$(".prevBtn").click(function(){
+				slider01.goToPrevSlide();
+			});
+
+
 		});
 	</script>
 </head>
@@ -171,6 +178,12 @@
 								</div>
 							</li>
 						</ul>
+						<div class="prevBtn">
+							<img src="images/prevbtn.png" alt="">
+						</div>
+						<div class="nextBtn">
+							<img src="images/nextbtn.png" alt="">
+						</div>
 					</li>
 					<li class="conTwo">
 						<img src="images/img03_04.jpg" alt="">
