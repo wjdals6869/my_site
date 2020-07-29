@@ -4,6 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>company</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
@@ -12,6 +13,7 @@
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider();
+			$(".conSlider").bxSlider();
 		});
 	</script>
 </head>
@@ -29,6 +31,11 @@
 					<li><a href="#">NEWSLETTER</a></li>
 				</ul>
 			</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 		<div class="slider_wrap">
 			<ul class="slider">
@@ -61,8 +68,23 @@
 						<img src="images/imgs/play_btn.png" alt="">
 					</a>
 				</li>
-				<li class="con3">3</li>
-				<li class="con4">4</li>
+				<li class="con3">
+					<div class="txtWrap">
+						<h4>ISSUE NO.4</h4>
+						<p>JOBS-NOVELIST<br>소설가: 써야 하는 이야기를<br>쓰고 마는 사람</p>
+					</div>
+					<div class="btn">
+						<ul class="clearfix">
+							<li class="prevBtn">
+								<img src="images/imgs/prev_btn.png" alt="">
+							</li>
+							<li class="nextBtn">
+								<img src="images/imgs/next_btn.png" alt="">
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="con4"></li>
 				<li class="con5">
 					<a href="#">
 						<img src="images/imgs/file_btn.png" alt="">
@@ -90,14 +112,56 @@
 						<p>B CAST</p>
 					</a>
 				</li>
-				<li class="con12">12</li>
+				<li class="con12"></li>
 			</ul>
 		</div>
 	</header>
 	<section id="shop">
 		<h1>SHOP</h1>
 		<div class="conSlider">
-			<ul class="clearfix">
+			<ul class="bFirst clearfix">
+				<li>
+					<a href="#">
+						<img src="images/imgs/book1.jpg" alt="">
+						<p>ISSUE NO.4</p>
+						<h4>JOBS - NOVELIST</h4>
+						<p>￦17,100</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgs/book2.jpg" alt="">
+						<p>ISSUE NO.13</p>
+						<h4>CLAM</h4>
+						<p>￦13,500</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgs/book3.jpg" alt="">
+						<p>ISSUE NO.84</p>
+						<h4>RAPHA</h4>
+						<p>￦13,500</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgs/book4.jpg" alt="">
+						<p>ISSUE NO.3</p>
+						<h4>JOBS - ARCHITECT</h4>
+						<p>￦17,100</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/imgs/book5.jpg" alt="">
+						<p>ISSUE NO.5</p>
+						<h4>SALT</h4>
+						<p>￦13,500</p>
+					</a>
+				</li>
+			</ul>
+			<ul class="bSecond clearfix">
 				<li>
 					<a href="#">
 						<img src="images/imgs/book1.jpg" alt="">
