@@ -13,7 +13,20 @@
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider();
-			$(".conSlider").bxSlider();
+			$(".conSlider").bxSlider({
+				pager:false,
+				controls:false,
+				moveSlides:2,
+				slideWidth:213,
+				minSlides:5,
+				maxSlides:5,
+				slideMargin:55,
+				auto:true
+			});
+			$(".nSlider").bxSlider({
+				pager:false,
+				controls:false,
+			});
 		});
 	</script>
 </head>
@@ -26,9 +39,9 @@
 					<li><a href="#">ABOUT B</a></li>
 					<li><a href="#">ARCHIVE</a></li>
 					<li><a href="#">STORY</a></li>
-					<li><a href="#">SHOP</a></li>
+					<li><a href="#">SHOP</a></li><!-- 
 					<li><a href="#">B CAST</a></li>
-					<li><a href="#">NEWSLETTER</a></li>
+					<li><a href="#">NEWSLETTER</a></li> -->
 				</ul>
 			</nav>
 			<div class="toggleMenu">
@@ -69,10 +82,20 @@
 					</a>
 				</li>
 				<li class="con3">
-					<div class="txtWrap">
-						<h4>ISSUE NO.4</h4>
-						<p>JOBS-NOVELIST<br>소설가: 써야 하는 이야기를<br>쓰고 마는 사람</p>
-					</div>
+					<ul class="nSlider">
+						<li class="news1">
+							<div class="s_txtWrap">
+								<h4>ISSUE NO.4</h4>
+								<p>JOBS-NOVELIST<br>소설가: 써야 하는 이야기를<br>쓰고 마는 사람</p>
+							</div>
+						</li>
+						<li class="news2">
+							<div class="s_txtWrap">
+								<h4>ISSUE NO.3</h4>
+								<p>JOBS-ARCHITECT<br>건축가: 써야 하는 이야기를<br>쓰고 마는 사람</p>
+							</div>
+						</li>
+					</ul>
 					<div class="btn">
 						<ul class="clearfix">
 							<li class="prevBtn">
@@ -118,50 +141,8 @@
 	</header>
 	<section id="shop">
 		<h1>SHOP</h1>
-		<div class="conSlider">
-			<ul class="bFirst clearfix">
-				<li>
-					<a href="#">
-						<img src="images/imgs/book1.jpg" alt="">
-						<p>ISSUE NO.4</p>
-						<h4>JOBS - NOVELIST</h4>
-						<p>￦17,100</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="images/imgs/book2.jpg" alt="">
-						<p>ISSUE NO.13</p>
-						<h4>CLAM</h4>
-						<p>￦13,500</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="images/imgs/book3.jpg" alt="">
-						<p>ISSUE NO.84</p>
-						<h4>RAPHA</h4>
-						<p>￦13,500</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="images/imgs/book4.jpg" alt="">
-						<p>ISSUE NO.3</p>
-						<h4>JOBS - ARCHITECT</h4>
-						<p>￦17,100</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="images/imgs/book5.jpg" alt="">
-						<p>ISSUE NO.5</p>
-						<h4>SALT</h4>
-						<p>￦13,500</p>
-					</a>
-				</li>
-			</ul>
-			<ul class="bSecond clearfix">
+		<div class="conSliderWrap">
+			<ul class="conSlider clearfix">
 				<li>
 					<a href="#">
 						<img src="images/imgs/book1.jpg" alt="">
