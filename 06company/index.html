@@ -23,9 +23,16 @@
 				slideMargin:55,
 				auto:true
 			});
+			var nSlider = 
 			$(".nSlider").bxSlider({
 				pager:false,
-				controls:false,
+				controls:false
+			});
+			$(".nextBtnCon3").click(function(){
+				nSlider.goToNextSlide();
+			});
+			$(".prevBtnCon3").click(function{
+				nSlider.goToPrevSlide();
 			});
 		});
 	</script>
@@ -98,10 +105,10 @@
 					</ul>
 					<div class="btn">
 						<ul class="clearfix">
-							<li class="prevBtn">
+							<li class="prevBtnCon3">
 								<img src="images/imgs/prev_btn.png" alt="">
 							</li>
-							<li class="nextBtn">
+							<li class="nextBtnCon3">
 								<img src="images/imgs/next_btn.png" alt="">
 							</li>
 						</ul>

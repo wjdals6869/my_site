@@ -149,10 +149,10 @@
     border:none;
     margin-bottom: 0;
 }
-.nSlider .bx-wrapper {
+#header>.content>ul>li.con3>.nSlider .bx-wrapper {
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
     box-shadow:none;
-    border:none;
+    border: 0 none;
     margin-bottom: 0;
 }
