@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "pc.css" screen and (min-width:923px);
+@import "pcc.css" screen and (min-width:923px);
  /*pc layout*/
 @import "tablet.css" screen and (min-width:577px) and (max-width:922px);
  /*tablet layout*/
