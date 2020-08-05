@@ -13,6 +13,32 @@
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider();
+
+
+			var con3_slider = $(".nSlider").bxSlider({
+				pager:false,
+				controls:false,
+				touchEnabled:false
+			});
+			$(".nextBtnCon3").click(function(){
+				con3_slider.goToNextSlide()
+			});
+			$(".prevBtnCon3").click(function(){
+				con3_slider.goToPrevSlide()
+			});
+			var con4_slider = $ (".nSlider02").bxSlider({
+				pager:false,
+				controls:false,
+				touchEnabled:false
+			});
+			$(".nextBtnCon3").click(function(){
+				con4_slider.goToNextSlide()
+			});
+			$(".prevBtnCon3").click(function(){
+				con4_slider.goToPrevSlide()
+			});
+
+
 			$(".shop_slider").bxSlider({
 				controls:false,
 				maxSlides:5
@@ -21,7 +47,10 @@
 	</script>
 </head>
 <body>
+	<!-- header -->
 	<header id="header" class="main">
+
+		<!-- header_top -->
 		<div id="header_top" class="clearfix">
 			<h1><a href="#">B</a></h1>
 			<nav id="main_menu">
@@ -37,7 +66,9 @@
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</div>
-		</div>
+		</div><!-- header_top -->
+
+		<!-- slider_wrap -->
 		<div class="slider_wrap">
 			<ul class="slider">
 				<li class="first">
@@ -55,7 +86,9 @@
 					</div>
 				</li>
 			</ul>
-		</div>
+		</div><!-- slider_wrap -->
+
+		<!-- content -->
 		<div class="content">
 			<ul>
 				<li class="con1">
@@ -64,11 +97,13 @@
 						<p>ABOUT B</p>
 					</a>
 				</li>
+
 				<li class="con2">
-					<a href="#">
+					<a href="https://www.youtube.com/watch?v=xqPZfsxz4aU">
 						<img src="images/imgs/play_btn.png" alt="">
 					</a>
 				</li>
+
 				<li class="con3">
 					<ul class="nSlider">
 						<li class="news1">
@@ -85,48 +120,64 @@
 						</li>
 					</ul>
 					<div class="btn">
-						<ul class="clearfix">
-							<li class="prevBtnCon3">
-								<img src="images/imgs/prev_btn.png" alt="">
-							</li>
-							<li class="nextBtnCon3">
-								<img src="images/imgs/next_btn.png" alt="">
-							</li>
-						</ul>
+						<div class="nextBtnCon3">
+							<img src="images/imgs/next_btn.png" alt="">
+						</div>
+						<div class="prevBtnCon3">
+							<img src="images/imgs/prev_btn.png" alt="">
+						</div>
 					</div>
 				</li>
-				<li class="con4"></li>
+
+				<li class="con4">
+					<ul class="nSlider02">
+						<li><img src="images/imgs/job01.png" alt=""></li>
+						<li><img src="images/imgs/job02.png" alt=""></li>
+					</ul>
+				</li>
+
 				<li class="con5">
 					<a href="#">
 						<img src="images/imgs/file_btn.png" alt="">
 						<p>ARCHIVE</p>
 					</a>
 				</li>
+
 				<li class="con6">
 					<a href="#">
 						<img src="images/imgs/story_btn.png" alt="">
 						<p>STORY</p>
 					</a>
 				</li>
-				<li class="con7"><a href="#"></a></li>
-				<li class="con8"><a href="#"></a></li>
-				<li class="con9"><a href="#"></a></li>
+
+				<li class="con7"><a href="#"><img src="images/imgs/img05.png" alt="BRAND" title="Brand"></a></li>
+
+				<li class="con8"><a href="#"><img src="images/imgs/img06.png" alt="FOOD" title="Food"></a></li>
+
+				<li class="con9"><a href="#"><img src="images/imgs/img07.png" alt="JOBS" title="Jobs"></a></li>
+
 				<li class="con10">
 					<a href="#">
 						<img src="images/imgs/shop_btn.png" alt="">
 						<p>SHOP</p>
 					</a>
 				</li>
+
 				<li class="con11">
 					<a href="#">
 						<img src="images/imgs/bcast_btn.png" alt="">
 						<p>B CAST</p>
 					</a>
 				</li>
-				<li class="con12"></li>
+
+				<li class="con12"><a href="#"><img src="images/imgs/img08.png" alt="INTERVIEW" title="interview"></a></li>
 			</ul>
-		</div>
+		</div><!-- content -->
+
 	</header>
+	<!-- header -->
+	
+	<!-- shop -->
 	<section id="shop">
 		<h1>SHOP</h1>
 		<div class="shop_slider_wrap">
@@ -174,5 +225,7 @@
 			</ul>
 		</div>
 	</section>
+	<!-- shop -->
+
 </body>
 </html>
