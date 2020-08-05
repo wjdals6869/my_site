@@ -13,27 +13,10 @@
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider();
-			// $(".conSlider").bxSlider({
-			// 	pager:false,
-			// 	controls:false,
-			// 	moveSlides:2,
-			// 	slideWidth:213,
-			// 	minSlides:5,
-			// 	maxSlides:5,
-			// 	slideMargin:55,
-			// 	auto:true
-			// });
-			// var nSlider = 
-			// $(".nSlider").bxSlider({
-			// 	pager:false,
-			// 	controls:false
-			// });
-			// $(".nextBtnCon3").click(function(){
-			// 	nSlider.goToNextSlide();
-			// });
-			// $(".prevBtnCon3").click(function{
-			// 	nSlider.goToPrevSlide();
-			// });
+			$(".shop_slider").bxSlider({
+				controls:false,
+				maxSlides:5
+			});
 		});
 	</script>
 </head>
@@ -146,9 +129,9 @@
 	</header>
 	<section id="shop">
 		<h1>SHOP</h1>
-		<div class="conSliderWrap">
-			<ul class="conSlider clearfix">
-				<li>
+		<div class="shop_slider_wrap">
+			<ul class="shop_slider clearfix">
+				<li class="slide01">
 					<a href="#">
 						<img src="images/imgs/book1.jpg" alt="">
 						<p>ISSUE NO.4</p>
@@ -156,7 +139,7 @@
 						<p>￦17,100</p>
 					</a>
 				</li>
-				<li>
+				<li class="slide02">
 					<a href="#">
 						<img src="images/imgs/book2.jpg" alt="">
 						<p>ISSUE NO.13</p>
@@ -164,7 +147,7 @@
 						<p>￦13,500</p>
 					</a>
 				</li>
-				<li>
+				<li class="slide03">
 					<a href="#">
 						<img src="images/imgs/book3.jpg" alt="">
 						<p>ISSUE NO.84</p>
@@ -172,7 +155,7 @@
 						<p>￦13,500</p>
 					</a>
 				</li>
-				<li>
+				<li class="slide04">
 					<a href="#">
 						<img src="images/imgs/book4.jpg" alt="">
 						<p>ISSUE NO.3</p>
@@ -180,7 +163,7 @@
 						<p>￦17,100</p>
 					</a>
 				</li>
-				<li>
+				<li class="slide05">
 					<a href="#">
 						<img src="images/imgs/book5.jpg" alt="">
 						<p>ISSUE NO.5</p>
