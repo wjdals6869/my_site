@@ -191,10 +191,10 @@
 
 
 /*sns*/
-#sns{width: 1260px;margin: 0 auto;padding-top: 80px;position: relative;}
+#sns{width: 1260px;margin: 0 auto;padding: 80px 0;position: relative;}
 
 #sns .sns_content{
-	width: 315px;height: 630px;background: #222;
+	width: 315px;height: 630px;background: #222;float: left;
 }
 #sns .sns_content .txtWrap{padding: 80px 45px;color:#fff;}
 #sns .sns_content .txtWrap .icon{margin: 0 auto;}
@@ -212,6 +212,29 @@
 }
 
 
-#sna .sSliderWrap{}
-#sna .sSliderWrap .sSlider{}
-#sna .sSliderWrap .sSlider li{}
+#sns .sSliderWrap{width: 945px;height: 630px;background: red;float: right;}
+#sns .sSliderWrap .sSlider{}
+#sns .sSliderWrap .sSlider li{float: left;width: 315px;height: 630px;_background:red;}
+#sns .sSliderWrap .sSlider .snsConTxt{
+	position: relative;
+	width: 315px;height: 315px;background: #ededee;
+	padding: 50px;font-size:0.8em;color:#333;
+}
+#sns .sSliderWrap .sSlider .snsConTxt h1{
+	position: absolute;bottom: 50px;left:50px;
+	font-size:1.2em;cursor:pointer;
+}
+#sns .sSliderWrap .sSlider .snsConTxt h1:hover{color:red;}
+#sns .sSliderWrap .sSlider img{width: 315px;height: 315px;overflow: hidden;}
+#sns .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    background:none;
+}
+#sns .snsButton{
+	position: absolute;width: 90px;height: 45px;
+	left: 180px;bottom: 160px;cursor:pointer;
+}
+#sns .snsButton .sns_nextBtn{position: absolute;right: 0;top: 0;}
