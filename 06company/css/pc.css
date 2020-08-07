@@ -226,7 +226,7 @@
 }
 #sns .sSliderWrap .sSlider .snsConTxt h1:hover{color:red;}
 #sns .sSliderWrap .sSlider img{width: 315px;height: 315px;overflow: hidden;}
-#sns .bx-wrapper {
+.bx-wrapper {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
