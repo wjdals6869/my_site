@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>company sub01</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(function(){
+			$(".sVitab>ul>li").click(function(){
+				var liNum = $(this).index()
+				$("ul>li").removeClass();
+				$(this).addClass("active");
+				$(".sConImg>div").hide();
+				$(".sConImg>div").eq(liNum).fadeIn();
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<header id="subHeader" class="sub01">
+
+		<!-- header_top -->
+		<div id="header_top" class="clearfix">
+			<h1><a href="#">B</a></h1>
+			<nav id="main_menu">
+				<ul class="clearfix">
+					<li><a href="#">ABOUT B</a></li>
+					<li><a href="#">ARCHIVE</a></li>
+					<li><a href="#">STORY</a></li>
+					<li><a href="#">SHOP</a></li>
+				</ul>
+			</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		<!-- 	<div class="menu">menu</div> -->
+		</div><!-- header_top -->
+
+		<div class="sVisual_01"><!-- sVisual_01 -->
+			<div class="sViTxt">
+				<h3>ABOUT B</h3>
+			</div>
+			<div class="sVitab">
+				<ul class="clearfix">
+					<li><a href="#">OUR STORY</a></li>
+					<li><a href="#">PUBLICATION INFO</a></li>
+					<li><a href="#">STOCKISTS</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+		</div><!-- sVisual_01 -->
+
+	</header><!-- header -->
+
+	<section id="sub01Content">
+			<nav class="location">
+				<ul class="clearfix">
+					<li>
+						<a href="#">
+							<img src="images/imgs/sub01_h.png" alt="">
+						</a>
+					</li>
+					<li>></li>
+					<li><a href="#">ABOUT B</a></li>
+					<li>></li>
+					<li><a href="#">OUR STORY</a></li>
+				</ul>
+			</nav>
+		<div class="sConImg">
+			<p>OUR STORY</p>
+			<img src="images/imgs/sub01.png" alt="" class="conImg">
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer id="footer" style="background: #ededee">
+		<ul class="clearfix">
+			<li class="info">
+				<ul class="clearfix">
+					<li class="logo">
+						<a href="#">
+							<h1>Magazine B</h1>
+						</a>
+					</li>
+					<li class="address">
+						<p>서울특별시 용산구 대사관로11길 47(한남동) 회사명 : 비미디어컴퍼니   대표자 : 권승조<br>사업자등록번호 : 455-86-01601   통신판매업 신고번호 : 제 2020-서울용산-0129 호<br>info@magazine-b.com   T. 02-540-7435 │ 평일 10시 - 18시   정기구독문의.[나이스북] 02-6412-0128<br>COPYRIGHT ⓒ B MEDIA COMPANY</p>
+					</li>
+				</ul>
+			</li>
+			<li class="social-navigation">
+				<div class="nslt">
+					<a href="#"><h3>NEWSLETTER</h3></a>
+				</div>
+				<div class="signUp">
+					<a href="">구독하기 SIGN UP</a>
+				</div>
+				<div class="snsNav">
+					<ul class="clearfix">
+						<li class="youtube_i">
+							<a href="#"><img src="images/imgs/y_icon.png" alt=""></a>
+						</li>
+						<li class="facebook_i">
+							<a href="#"><img src="images/imgs/f_icon.png" alt=""></a>
+						</li>
+						<li class="insta_i">
+							<a href="#"><img src="images/imgs/i_icon.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</footer>
+	<div class="top">top</div>
+</body>
+</html>
