@@ -14,10 +14,13 @@
 		$(function(){
 			$(".sVitab>ul>li").click(function(){
 				var liNum = $(this).index()
-				$("ul>li").removeClass();
+				$(".sVitab>ul>li").removeClass();
 				$(this).addClass("active");
 				$(".sConImg>div").hide();
 				$(".sConImg>div").eq(liNum).fadeIn();
+
+				$(".loT>li").hide().eq(liNum).show();
+				
 			});
 		});
 	</script>
@@ -51,7 +54,7 @@
 			</div>
 			<div class="sVitab">
 				<ul class="clearfix">
-					<li><a href="#">OUR STORY</a></li>
+					<li class="active"><a href="#">OUR STORY</a></li>
 					<li><a href="#">PUBLICATION INFO</a></li>
 					<li><a href="#">STOCKISTS</a></li>
 					<li><a href="#">CONTACT</a></li>
@@ -72,12 +75,31 @@
 					<li>></li>
 					<li><a href="#">ABOUT B</a></li>
 					<li>></li>
-					<li><a href="#">OUR STORY</a></li>
+					<ul class="loT">
+						<li class="loLi1" >OUR STORY</li>
+						<li class="loLi2">PUBLICATION INFO</li>
+						<li class="loLi3">STOCKISTS</li>
+						<li class="loLi4">CONTACT</li>
+					</ul>
 				</ul>
 			</nav>
 		<div class="sConImg">
-			<p>OUR STORY</p>
-			<img src="images/imgs/sub01.png" alt="" class="conImg">
+			<div class="sConImg1">
+				<p>OUR STORY</p>
+				<img src="images/imgs/sub01.png" alt="" class="conImg">
+			</div>
+			<div class="sConImg2">
+				<p>PUBLICATION INFO</p>
+				<img src="images/imgs/sub01.png" alt="" class="conImg">
+			</div>
+			<div class="sConImg3">
+				<p>STOCKISTS</p>
+				<img src="images/imgs/sub01.png" alt="" class="conImg">
+			</div>
+			<div class="sConImg4">
+				<p>CONTACT</p>
+				<img src="images/imgs/sub01.png" alt="" class="conImg">
+			</div>
 		</div>
 	</section>
 

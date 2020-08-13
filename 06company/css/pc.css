@@ -359,7 +359,8 @@
 	display: block;text-align: center;
 	line-height: 60px;
 }
-.sVisual_01 .sVitab li a:hover{background: #222;color:#fff;}
+.sVitab ul li.active a{background:#222;color:white;}
+/*.sVisual_01 .sVitab li a:hover{background: #222;color:#fff;}*/
 
 
 #sub01Content{width: 100%;background: #ededee;}
@@ -375,4 +376,11 @@
 #sub01Content .sConImg p{text-align: center;font-size:1.6em;}
 #sub01Content .sConImg .conImg{margin: 0 auto;}
 
+.sConImg .sConImg2,
+.sConImg .sConImg3,
+.sConImg .sConImg4{display: none;}
+
+.location .loLi2,
+.location .loLi3,
+.location .loLi4{display: none;}
 
