@@ -6,6 +6,7 @@
 	<title>fullpage</title>
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.fullpage.js"></script>
 	<script>
@@ -15,7 +16,7 @@
 				menu:"#topMenu",
 				navigation:true,
 				slidesNavigation: true,
-				navigationTooltips: ['one', 'two', 'three', '2'],
+				navigationTooltips: ['Product', 'Brand', 'Program', 'Store'],
 				showActiveTooltip: true,
 				navigationPosition:"right",
 				afterLoad:function(anchorsLink,index){
@@ -30,12 +31,12 @@
 					}else{
 						$("#onViewOneTxt").removeClass("move")
 					}
-					if(index ==2){
+					if(index ==3){
 						$("#onViewTwo").addClass("move");
 					}else{
 						$("#onViewTwo").removeClass("move")
 					}
-					if(index ==2){	
+					if(index ==3){	
 						$("#onViewTwoTxt").addClass("move");
 					}else{
 						$("#onViewTwoTxt").removeClass("move")
@@ -44,158 +45,6 @@
 			});
 		});
 	</script>
-	<style>
-		#page1{background-image: url(images/bg01.jpg);}
-		#page2{background-image: url(images/bg02.png);}
-		#page3{background-image: url(images/bg3.jpg);}
-		#page4{background-image: url(images/bg04.jpg);}
-
-		.section{
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size:cover;
-		}
-
-		nav#navTop{
-			position: fixed;z-index:1;width: 100%;
-		}
-		nav#navTop img.logo{position: absolute;top: 40px;left: 60px;}
-		nav#navTop ul{position: absolute;right: 60px;top: 40px;}
-		nav#navTop li{float: left;margin-right: 100px;}
-		nav#navTop li a{
-			display: block;line-height: 50px;
-			text-align: center;padding: 0 10px;
-			color:#333;
-		}
-
-		nav#navTop li a:after{
-			content:"";display: block;width: 0;height: 2px;
-			background:#333;transition:0.3s;left: 0;
-		}
-		nav#navTop li.active a:after{
-			content:"";display: block;width: 0;height: 2px;
-			background:#333;transition:0.3s;left: 0;width: 100%;
-		}
-		nav#navTop li a:hover{font-weight:bold;}
-		nav#navTop li a:hover:after{width: 100%;}
-
-
-
-
-
-		.scroll{
-			position: absolute;left: 50%;transform:translateX(-50%);
-			bottom: 20px;animation:xScroll 0.8s infinite alternate;
-		}
-		@keyframes xScroll{
-			from{bottom: 20px;}
-			to{bottom: 40px;}
-		}
-		.mainTxt01{
-			width: 500px;position: absolute;right: 5%;
-			transform:translateX(-50%);top: 32%;
-			color:#333;text-align: left;
-		}
-		.mainTxt01 h3{font-size:3.5em;padding-bottom: 30px;}
-		.mainTxt01 p{margin-bottom: 30px;}
-		.mainTxt01 a{
-			display: block;width: 100px;
-			border: 1px solid #333;
-			line-height: 35px;
-			color:#333;border-radius:18px;text-align: center;
-		}
-		.mainTxt01 a:hover{background-color: #333;color:#fff;border: none}
-
-
-		.mainTxt02{
-			width: 500px;position: absolute;left: 20%;
-			transform:translateX(-50%);top: 55%;
-			color:#333;text-align: left;
-		}
-		.mainTxt02 h3{font-size:3.5em;padding-bottom: 30px;}
-		.mainTxt02 p{margin-bottom: 30px;}
-		.mainTxt02 a{
-			display: block;width: 100px;
-			border: 1px solid #333;
-			line-height: 35px;
-			color:#333;border-radius:18px;text-align: center;
-		}
-		.mainTxt02 a:hover{background-color: #333;color:#fff;}
-
-		#onViewOne{
-			position: absolute;left: 30%;
-			transform:translateX(-50%);
-			top: 10%;transition:1s;opacity:0;}
-		#onViewOne.move{top: 30%;opacity:1;}
-
-		#onViewOneTxt{
-			position: absolute;right: 0;
-			transition:1s;opacity:0;
-		}
-		#onViewOneTxt.move{right: 7%;opacity:1;}
-
-		#onViewTwo{
-			position: absolute;
-			right: -20%;top: 0px;
-			transition:1s;opacity:0;
-		}
-		#onViewTwo.move{right: 0;opacity:1;}
-
-		#onViewTwoTxt{
-			position: absolute;left: 0;
-			transition:1s;opacity:0;
-		}
-		#onViewTwoTxt.move{left: 26%;opacity:1;}
-
-		
-
-
-		.f3em{font-size:3em !important}
-		.f25em{font-size:2.5em !important}
-		.f2em{font-size:2em !important}
-		.f15em{font-size:1.5em !important}
-		.mb20{margin-bottom: 20px !important;}
-
-
-		.slide{position: relative;}
-		.slide .view01,
-		.slide .view02,
-		.slide .view03{
-			position: absolute;width:70%;height: 700px;
-			background-color:#ede1d5;
-			opacity: 0.9;
-			left: 50%;top: 50%;
-			transform:translate(-50%,-50%);
-		}
-		.slide .view01 ul li{float: left;}
-		.slide .view01 ul li.left{
-			width: 600px;position: absolute;left: 100px;
-			top: 50%;transform:translateY(-50%);
-		}
-		.slide .view01 ul li.left .p01{
-			font-size:1.3em;padding-bottom: 50px;
-		}
-		.slide .view01 ul li.left .p02{
-			padding-bottom: 50px;
-		}
-		.slide .view01 ul li a{
-			display: block;width: 180px;height: 40px;
-			line-height: 40px;font-size:14px;
-			border: 1px solid #333;text-align: center;
-		}
-		.slide .view01 ul li a:hover{
-			background: #4f2608;color:#fff;
-		}
-		.slide .view01 ul li.right{
-			float: right;margin:50px;
-		}
-
-		#video{
-			position: absolute;
-			width: 100%;height: 100%;
-			object-fit: cover;top: 0;	
-		}
-	</style>
 </head>
 <body>
 	<nav id="navTop">
@@ -203,45 +52,28 @@
 		<ul id="topMenu" class="clearfix">
 			<li data-menuanchor="a1st"><a href="#a1st">Product</a></li>
 			<li data-menuanchor="a2st"><a href="#a2st">Brand</a></li>
-			<li data-menuanchor="a3st"><a href="#a3st">Design</a></li>
-			<li data-menuanchor="a4st"><a href="#a4st">Event</a></li>
+			<li data-menuanchor="a3st"><a href="#a3st">Program</a></li>
+			<li data-menuanchor="a4st"><a href="#a4st">Store</a></li>
 		</ul>
 	</nav>
 
 	<div id="fullpage">
 
-		<div class="section" id="page1" data-anchor="a1st">
+		<div class="section" id="page1" data-anchor="a1st"><!-- 01 -->
 			<div class="main" id="onViewOne">
 				<img src="images/img01.png" alt="">
 			</div>
 			<div class="mainTxt01" id="onViewOneTxt">
 				<h3>Citrus Melange<br>Body Cleanser</h3>
 				<p>새롭게 선보이는 바디 클렌저는 기분을 고양시키는 페티그레인(비터오렌지잎/잔가지오일), 그레이프프루트, 레몬의 블렌드로 이루어진 상쾌한 샤워 젤로 세정 루틴에 변화를 선사합니다.</p>
-				<a href="#">VIEW</a>
+				<a href="#">View</a>
 			</div>
 			<div class="scroll">
 				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div>
 
-		<div class="section" id="page2" data-anchor="a2st">
-			<div class="main" id="onViewTwo">
-				<img src="images/img02.png" alt="">
-			</div>
-			<div class="mainTxt02" id="onViewTwoTxt">
-				<h3>피부와 심신의 안정</h3>
-				<p>균형잡힌 스킨케어 관리를 위해 이솝 페이셜 어포인트먼트는<br>피부에 생기와 집중적인 영양을 공급하는 맞춤관리를 제공합니다.</p>
-				<a href="#">MORE</a>
-			</div>
-		</div>
-
-		<div class="section" id="page3" data-anchor="a3st">
-			<video id="video" autoplay muted data-autoplay loop>
-				<source src="video/video.mp4" type="video/mp4">
-			</video>
-		</div>
-
-		<div class="section" id="page4" data-anchor="a4st">
+		<div class="section" id="page2" data-anchor="a2st"><!-- 02 -->
 			<div class="slide">
 				<div class="view01">
 					<ul class="clearfix">
@@ -263,7 +95,31 @@
 				<div class="view03">Dolores molestias voluptatum, omnis dicta ullam, eveniet minus optio dignissimos cupiditate officia veniam perspiciatis repellat maxime ea non doloremque distinctio praesentium tenetur corporis, quidem quae nesciunt ad! Ex repellat, voluptatem!</div>
 			</div>
 		</div>
-			
+
+		<div class="section" id="page3" data-anchor="a3st"><!-- 03 -->
+			<div class="main" id="onViewTwo">
+				<img src="images/img02.png" alt="">
+			</div>
+			<div class="mainTxt02" id="onViewTwoTxt">
+				<h3>피부와 심신의 안정</h3>
+				<p>균형잡힌 스킨케어 관리를 위해 이솝 페이셜 어포인트먼트는<br>피부에 생기와 집중적인 영양을 공급하는 맞춤관리를 제공합니다.</p>
+				<a href="#">More</a>
+			</div>
+		</div>
+
+		<div class="section" id="page4" data-anchor="a4st"><!-- 04 -->
+			<div class="vTxt">
+				<h3>Aesop Store</h3>
+				<h1 class="fserif f25em">San Lorenzo in Lucina</h1>
+				<h3 class="fserif">Rome, Italy</h3>
+			</div>
+				<a href="http://taxonomyofdesign.com/#!/stores">Store →</a>
+			<div class="vWrap">
+				<video id="video" autoplay muted data-autoplay loop controls>
+					<source src="video/video02.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>			
 	</div>
 	<div class="section fp-auto-height" data-anchor="a5st">
 		<div class="footer" style="height:300px;background-color:skyblue;"></div>
