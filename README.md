@@ -6,3 +6,4 @@ my test site
 * 04 klass - https://wjdals6869.github.io/my_site/04klass
 * 05 tour - https://wjdals6869.github.io/my_site/05tour
 * 06 company - https://wjdals6869.github.io/my_site/06company
+* 07 fullpage - https://wjdals6869.github.io/my_site/07fullpage
