@@ -4,9 +4,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>fullpage</title>
-	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/fullPage.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+KR&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.fullpage.js"></script>
 	<script>
@@ -31,15 +33,25 @@
 					}else{
 						$("#onViewOneTxt").removeClass("move")
 					}
-					if(index ==3){
-						$("#onViewTwo").addClass("move");
-					}else{
-						$("#onViewTwo").removeClass("move")
-					}
-					if(index ==3){	
+					if(index ==2){
 						$("#onViewTwoTxt").addClass("move");
 					}else{
 						$("#onViewTwoTxt").removeClass("move")
+					}
+					if(index ==3){
+						$("#onViewThree").addClass("move");
+					}else{
+						$("#onViewThree").removeClass("move")
+					}
+					if(index ==3){	
+						$("#onViewThreeTxt").addClass("move");
+					}else{
+						$("#onViewThreeTxt").removeClass("move")
+					}
+					if(index ==4){	
+						$("#bg04Img").addClass("move");
+					}else{
+						$("#bg04Img").removeClass("move")
 					}
 				}
 			});
@@ -64,6 +76,7 @@
 				<img src="images/img01.png" alt="">
 			</div>
 			<div class="mainTxt01" id="onViewOneTxt">
+				<p>갓 짜낸 신선함</p>
 				<h3>Citrus Melange<br>Body Cleanser</h3>
 				<p>새롭게 선보이는 바디 클렌저는 기분을 고양시키는 페티그레인(비터오렌지잎/잔가지오일), 그레이프프루트, 레몬의 블렌드로 이루어진 상쾌한 샤워 젤로 세정 루틴에 변화를 선사합니다.</p>
 				<a href="#">View</a>
@@ -77,43 +90,67 @@
 			<div class="slide">
 				<div class="view01">
 					<ul class="clearfix">
-						<li class="left">
-							<p class="p01">이솝은 1987년에 설립되었고 멜버른에 본사를 두고 있으며<br>세계 다수 지역에 사무실과 스토어를 보유하고 있습니다.</p>
-							<p class="p02">최고 품질의 스킨, 헤어 그리고 바디케어 제품을 만들어 내는 것이 변함없는 이솝의 목표입니다. 우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해 폭넓은 조사를 하며, 반드시 효능과 안전성이 입증된 성분만을 사용합니다. 전문적인 지식을 가진 컨설턴트들은 하나하나 개성적인 이솝 매장에서 제품라인을 소개하고, 고객이 적합한 제품을 고를 수 있도록 안내해 드릴 수 있어 매우 기쁩니다.</p>
-							<a href="#">이솝의 제품 철학 →</a>
+						<li class="left" id="onViewTwoTxt">
+							<p class="p00">Brand Story</p>
+							<p class="p01">이솝은 세심하게 고안된 효과적이면서도, 감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다.</p>
+							<p class="p02">이솝은 1987년에 설립되었고 멜버른에 본사를 두고 있으며, 세계 다수 지역에 사무실과 스토어를 보유하고 있습니다.최고 품질의 스킨, 헤어 그리고 바디케어 제품을 만들어 내는 것이 변함없는 이솝의 목표입니다. 우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해 폭넓은 조사를 하며, 반드시 효능과 안전성이 입증된 성분만을 사용합니다. 전문적인 지식을 가진 컨설턴트들은 하나하나 개성적인 이솝 매장에서 제품라인을 소개하고, 고객이 적합한 제품을 고를 수 있도록 안내해 드릴 수 있어 매우 기쁩니다.</p>
+							<a href="#">이솝의 제품 철학</a>
 						</li>
 						<li class="right">
-							<img src="images/img06.jpg" alt="">
 						</li>
 					</ul>					
 				</div>
 			</div>
 			<div class="slide">
-				<div class="view02">Sint earum quia reiciendis, et ad eum commodi rem minus fugiat magni aut deleniti in molestias recusandae tempora reprehenderit aspernatur provident totam velit alias, esse sequi aperiam excepturi accusamus nulla!</div>
+				<div class="view02">
+					<ul class="clearfix">
+						<li class="left">
+							<p class="p00">Brand Design</p>
+							<p class="p01">‘It is your duty in life to save your dream.’</p>
+							<p class="p02">이솝은 사려깊은 디자인이 우리 삶의 질을 높인다는 확고한 믿음이 있습니다.이솝은 지적이고 지속 가능한 디자인에 대하여 진정성 있는 관심을 가지고 있으며, 이는 이솝의 모든 분야로 이어집니다. 모든 제품 성분에 세심한 연구가 기본이 되듯, 제품 용기를 선택할 때 또한 쉽게 사용할 수 있고 우리 눈에도 아름다우면서도 실용성을 중시한 용기들을 선택하고 있습니다.이솝은 새로운 스토어 오픈을 준비할 때 이미 그 장소에 있는 것을 어떻게 활용하고 협력할 것인지 가장 먼저 염두에 둡니다. 지역과 어울리지 않는 공간이 되기보다는, 그 지역의 거리 속 한 구성원으로 조화롭게 가치를 더하는 것이 우리의 진정한 의의입니다. 따라서 지역과 연관성 있는 디자인 요소를 활용하기 위해 심혈을 기울입니다.</p>
+							<a href="#">이솝의 디자인 철학</a>
+						</li>
+						<li class="right">
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div class="slide">
-				<div class="view03">Dolores molestias voluptatum, omnis dicta ullam, eveniet minus optio dignissimos cupiditate officia veniam perspiciatis repellat maxime ea non doloremque distinctio praesentium tenetur corporis, quidem quae nesciunt ad! Ex repellat, voluptatem!</div>
+				<div class="view03">
+					<ul class="clearfix">
+						<li class="left">
+							<p class="p00">Brand Design</p>
+							<p class="p01">이솝은 지적이고 지속가능한 디자인에 대하여 진정성 있는 관심을 가지고 있으며 이는 이솝의 모든 분야로 이어집니다.</p>
+							<p class="p02">새로운 지역을 고려할 때 이 지역과 어울리지 않는 공간이 되기보다는 그 지역의 거리에 어울리는 한 구성원으로 조화롭게 가치를 더하는 것이 우리의 진정한 의의입니다.이솝은 2004년 멜버른 교외의 세인트 킬다 작은 지하 코너에서 최초의 고객을 맞이했습니다. 이곳은 지하 주차장으로 이어지는 좁은 비탈길에 위치한 작은 스토어였지만, 현재는 이솝 건축과 디자인의 기준점이 되었습니다. 이솝은 새로운 매장 오픈을 준비할 때 이미 그 장소에 있는 것을 어떻게 활용하고 협력할지를 가장 먼저 염두에 둡니다. 또한 과거, 현재, 미래에 대한 고민을 함께 하며 조심스럽게 스토어 오픈을 계획합니다.</p>
+							<a href="#">이솝 매장 찾기</a>
+						</li>
+						<li class="right">
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
 		<div class="section" id="page3" data-anchor="a3st"><!-- 03 -->
-			<div class="main" id="onViewTwo">
+			<div class="main" id="onViewThree">
 				<img src="images/img02.png" alt="">
 			</div>
-			<div class="mainTxt02" id="onViewTwoTxt">
-				<h3>피부와 심신의 안정</h3>
+			<div class="mainTxt03" id="onViewThreeTxt">
+				<p>피부와 심신의 안정</p>
+				<h3>Facial Appointment</h3>
 				<p>균형잡힌 스킨케어 관리를 위해 이솝 페이셜 어포인트먼트는<br>피부에 생기와 집중적인 영양을 공급하는 맞춤관리를 제공합니다.</p>
 				<a href="#">More</a>
 			</div>
 		</div>
 
 		<div class="section" id="page4" data-anchor="a4st"><!-- 04 -->
+			<div class="bg04" id="bg04Img"></div>
 			<div class="vTxt">
 				<h3>Aesop Store</h3>
-				<h1 class="fserif f25em">San Lorenzo in Lucina</h1>
-				<h3 class="fserif">Rome, Italy</h3>
+				<h1 class="f25em">San Lorenzo in Lucina</h1>
+				<h3>Rome, Italy</h3>
 			</div>
-				<a href="http://taxonomyofdesign.com/#!/stores">Store →</a>
+				<a href="http://taxonomyofdesign.com/#!/stores">Store</a>
 			<div class="vWrap">
 				<video id="video" autoplay muted data-autoplay loop controls>
 					<source src="video/video02.mp4" type="video/mp4">
