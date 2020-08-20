@@ -2,7 +2,7 @@
 html,body{font-family: 'Lora', serif;}
 /*전체이미지*/
 #page1{background-image: url(../images/bg01.jpg);}
-#page2{background-image: url(../images/bg04.jpg);}
+#page2{_background-image: url(../images/bg04.jpg);}
 #page3{background: #fffef2;_background-image: url(../images/bg01.jpg);}
 #page4{background: wheat;}
 #bg04Img{
@@ -98,6 +98,64 @@ nav#navTop li a:hover:after{width: 100%;}
 	transition:0.8s;opacity:0;
 }
 #onViewTwoImg.move{right: 7%;opacity:1;}
+
+/*page01 - showView*/
+.showView01{
+	z-index:3;
+	width: 52%;height: 100%;background:#333;
+	position: absolute;right: -52%;top: 0;
+}
+.showView01.right{right: 0;}
+.showView01 img{
+	position: absolute;top: 50%;
+	transform:translateY(-50%);
+}
+.showView01 .showView01Txt{
+	width: 400px;_background:orange;
+	position: absolute;left: 65%;top: 50%;
+	transform:translate(-50%,-50%);
+	font-family: 'Noto Sans KR', sans-serif;
+	color:#fff;
+}
+.showView01 .showView01Txt h3{font-size:1.5em;padding-bottom: 10px;}
+.showView01 .showView01Txt p{
+	padding-bottom: 10px;border-bottom: 2px solid #fff;
+	font-size:0.9em;
+}
+.showView01 .showView01Txt ul{padding: 20px 0}
+.showView01 .showView01Txt ul li{padding: 10px 0;border-bottom: 0.5px solid #fff;font-size:0.9em;}
+.showView01 .showView01Txt ul li:last-child{border:none;}
+.showView01 .showView01Txt a{
+	display: block;text-align: center;
+	width: 400px;line-height: 50px;background: #fff;
+	border-radius:25px;
+}
+.showView01 .showView01Txt a:hover{
+	background: #F7A039;color:#fff;
+	transition:0.3s;
+}
+.showView01 .bar{
+	width: 30px;height: 30px;
+	position: absolute;right:30px;top:30px;
+	z-index: 1;cursor:pointer;
+}
+.showView01 .bar div{
+	width: 20px;height: 3px;background: #fff;
+	position: absolute;left:5.5px;border-radius:3px;
+	transition:0.3s;
+}
+.showView01 .bar1{
+	left:50%;top:50%;
+	transform:translate(-50%,-50%) rotate(-45deg);
+}
+.showView01 .bar2{
+	left:50%;top:50%;
+	transform:translate(-50%,-50%) rotate(45deg);
+}
+
+
+
+
 
 
 /*page02*/
@@ -234,10 +292,15 @@ nav#navTop li a:hover:after{width: 100%;}
 }
 .slide .view03 ul li.right{
 	float: right;width: 500px;height: 700px;
-	background-image: url(../images/img07.jpg);
+	background-image: url(../images/img08.png);
 	background-size:cover;
 }
-
+#video02{
+	position: absolute;
+	width: 100%;height: 100%;
+	top: 0;
+	object-fit:cover;
+}
 
 
 /*page03*/

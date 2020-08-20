@@ -55,6 +55,15 @@
 					}
 				}
 			});
+			$(function(){
+					$(".view01_btn").click(function(){
+						$(".showView01").animate({right:0},500);
+					});
+
+					$(".bar").click(function(){
+						$(".showView01").animate({right:"-52%"},500);
+					});
+				});
 		});
 	</script>
 </head>
@@ -79,10 +88,27 @@
 				<p>갓 짜낸 신선함</p>
 				<h3>Citrus Melange<br>Body Cleanser</h3>
 				<p>새롭게 선보이는 바디 클렌저는 기분을 고양시키는 페티그레인(비터오렌지잎/잔가지오일), 그레이프프루트, 레몬의 블렌드로 이루어진 상쾌한 샤워 젤로 세정 루틴에 변화를 선사합니다.</p>
-				<a href="#">View</a>
+				<a href="#" class="view01_btn">View</a>
 			</div>
 			<div class="scroll">
 				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+			<div class="showView01">
+				<img src="images/img03.png" alt="">
+				<div class="showView01Txt">
+					<h3>시트러스 멜란지 바디 클렌저</h3>
+					<p>피부 정화 작용이 뛰어난 식물성 추출물의 블렌드를 함유해 피부를 깨끗하게 닦고 생기를 북돋우는 시트러스 아로마를 선사하는 거품이 적은 부드러운 젤 클렌저</p>
+					<ul>
+						<li>사용감<br>깨끗한, 상쾌한</li>
+						<li>향<br>시트러스, 상쾌한</li>
+						<li>주요 성분<br>비터오렌지잎/잔가지오일, 레몬 라인드, 그레이프프루트 라인드</li>
+					</ul>
+					<a href="#">카트에 추가 ￦ 56,000원</a>
+				</div>
+				<div class="bar">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+				</div>
 			</div>
 		</div>
 
@@ -119,7 +145,7 @@
 				<div class="view03">
 					<ul class="clearfix">
 						<li class="left">
-							<p class="p00">Brand Design</p>
+							<p class="p00">Aesop Store</p>
 							<p class="p01">이솝은 지적이고 지속가능한 디자인에 대하여 진정성 있는 관심을 가지고 있으며 이는 이솝의 모든 분야로 이어집니다.</p>
 							<p class="p02">새로운 지역을 고려할 때 이 지역과 어울리지 않는 공간이 되기보다는 그 지역의 거리에 어울리는 한 구성원으로 조화롭게 가치를 더하는 것이 우리의 진정한 의의입니다.이솝은 2004년 멜버른 교외의 세인트 킬다 작은 지하 코너에서 최초의 고객을 맞이했습니다. 이곳은 지하 주차장으로 이어지는 좁은 비탈길에 위치한 작은 스토어였지만, 현재는 이솝 건축과 디자인의 기준점이 되었습니다. 이솝은 새로운 매장 오픈을 준비할 때 이미 그 장소에 있는 것을 어떻게 활용하고 협력할지를 가장 먼저 염두에 둡니다. 또한 과거, 현재, 미래에 대한 고민을 함께 하며 조심스럽게 스토어 오픈을 계획합니다.</p>
 							<a href="#">이솝 매장 찾기</a>
@@ -129,6 +155,9 @@
 					</ul>
 				</div>
 			</div>
+			<video id="video02" autoplay muted data-autoplay loop controls>
+				<source src="video/AESOP02.mp4" type="video/mp4">
+			</video>
 		</div>
 
 		<div class="section" id="page3" data-anchor="a3st"><!-- 03 -->
