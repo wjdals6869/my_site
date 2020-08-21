@@ -5,12 +5,16 @@
 	<meta charset="UTF-8">
 	<title>fullpage</title>
 	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+KR&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(function(){
 			$("#fullpage").fullpage({
@@ -22,7 +26,6 @@
 				showActiveTooltip: true,
 				navigationPosition:"right",
 				afterLoad:function(anchorsLink,index){
-					console.log(anchorsLink + ", " + index);
 					if(index ==1){
 						$("#onViewOne").addClass("move");
 					}else{
@@ -55,15 +58,52 @@
 					}
 				}
 			});
-			$(function(){
-					$(".view01_btn").click(function(){
-						$(".showView01").animate({right:0},500);
-					});
 
-					$(".bar").click(function(){
-						$(".showView01").animate({right:"-52%"},500);
-					});
-				});
+
+			$(".view01_btn").click(function(){
+				$(".showView01").animate({right:0},500);
+			});
+
+			$(".bar01").click(function(){
+				$(".showView01").animate({right:"-52%"},500);
+			});
+
+			
+
+
+			var iSlider03 = $(".imgSlider03").bxSlider({
+				controls:false,
+				pager:false,
+				slideWidth:1100
+			});
+
+
+
+
+			$(".nBtn03").click(function(){
+				iSlider03.goToNextSlide()
+			});
+			$(".pBtn03").click(function(){
+				iSlider03.goToPrevSlide()
+			});
+
+
+			$(".view03_btn").click(function(){
+				$(".showView03").fadeIn();
+				iSlider03.reloadSlider();
+
+			});
+			$(".bar03").click(function(){
+				$(".showView03").hide();
+			});
+
+
+
+			$(".storeModal").colorbox({
+				iframe:true,
+				innerWidth:1000,
+				innerHeight:700
+			});
 		});
 	</script>
 </head>
@@ -105,7 +145,7 @@
 					</ul>
 					<a href="#">카트에 추가 ￦ 56,000원</a>
 				</div>
-				<div class="bar">
+				<div class="bar01">
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 				</div>
@@ -120,9 +160,37 @@
 							<p class="p00">Brand Story</p>
 							<p class="p01">이솝은 세심하게 고안된 효과적이면서도, 감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다.</p>
 							<p class="p02">이솝은 1987년에 설립되었고 멜버른에 본사를 두고 있으며, 세계 다수 지역에 사무실과 스토어를 보유하고 있습니다.최고 품질의 스킨, 헤어 그리고 바디케어 제품을 만들어 내는 것이 변함없는 이솝의 목표입니다. 우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해 폭넓은 조사를 하며, 반드시 효능과 안전성이 입증된 성분만을 사용합니다. 전문적인 지식을 가진 컨설턴트들은 하나하나 개성적인 이솝 매장에서 제품라인을 소개하고, 고객이 적합한 제품을 고를 수 있도록 안내해 드릴 수 있어 매우 기쁩니다.</p>
-							<a href="#">이솝의 제품 철학</a>
+							<a href="#" class="view02_btn">이솝의 제품 철학</a>
 						</li>
+						<script>
+							$(".view02_btn").click(function(){
+								$(".showView02").animate({left:0},500);
+							});
+
+							// $(".view02_btn").click(function(){
+							// 	$(".showView02").animate({left:"-500px"},500);
+							// });
+						</script>
 						<li class="right">
+							<div class="showView02">
+								<ul class="clearfix">
+									<li class="p01">
+										<p>세심한 열정</p>
+									</li>
+									<li class="p02">
+										<p>이솝은 초기부터 제품 연구개발에 매우 독특한 접근 방식을 적용해왔습니다. 이솝의 숙련된 화학자들은 본사에 위치한 실용적이고 맞춤화 되어 있는 연구소에서 제품 아이디어를 내고, 배합에 대해 연구하고 견본을 만듭니다. 이솝은 세계 최고의 공급 업체로부터 조달 받은 원료에 최첨단 기술을 적용하고 오랜 과학적 경험과 원칙에 따라 최고 품질의 제품으로 탄생시킵니다.이솝은 고객이 표현한 니즈에 그대로 부합하는 제품만을 출시하고 심도 깊은 조사 후에 가장 높은 품질과 효능이 담긴 제품을 제공합니다.</p>
+									</li>
+								</ul>
+								<div class="showView02Img">
+									<div class="p03">
+										<h3 class="p03_1">‘ The merit of originality is not novelty<br>; it is sincerity. ’</h3>
+										<p class="p03_2">Thomas Carlyle</p>
+									</div>
+								</div>
+
+								
+								
+							</div>
 						</li>
 					</ul>					
 				</div>
@@ -168,7 +236,46 @@
 				<p>피부와 심신의 안정</p>
 				<h3>Facial Appointment</h3>
 				<p>균형잡힌 스킨케어 관리를 위해 이솝 페이셜 어포인트먼트는<br>피부에 생기와 집중적인 영양을 공급하는 맞춤관리를 제공합니다.</p>
-				<a href="#">More</a>
+				<a href="#" class="view03_btn">More</a>
+			</div>
+			<div class="showView03">
+				<div class="showViewBox03">
+					<div class="imgSlider03_wrap">
+						<ul class="imgSlider03">
+							<li>
+								<img src="images/img11.jpg" alt="">
+							</li>
+							<li>
+								<img src="images/img12.jpg" alt="">
+							</li>
+							<li>
+								<img src="images/img13.jpg" alt="">
+							</li>
+						</ul>
+						<div class="btn03">
+							<div class="nBtn03">
+								<img src="images/btn_next02.png" alt="" class="nBtn">
+							</div>
+							<div class="pBtn03">
+								<img src="images/btn_prev02.png" alt="" class="pBtn">
+							</div>
+						</div>
+					</div>
+					<div class="showView03Txt">
+						<h3>‘ Touch has a memory. ’</h3>
+						<p>John Keats</p>
+						<ul>
+							<li>이솝 페이셜 어포인트먼트는 피부의 균형과 집중적인 영양 공급을 위한 이솝만의 다양한 트리트먼트를 제공합니다. 숙련된 페이셜 트리트먼트 담당 직원은 리드미컬하고 유려한 동작과 섬세한 압력으로 이솝 포뮬레이션이 잘 흡수될 수 있도록 피부를 관리해줍니다.</li>
+							<li>트리트먼트를 진행하기에 앞서 담당 직원이 고객님께서 트리트먼트를 받는 목적과 다양한 피부 고민을 바탕으로 고객님께 가장 적합한 맞춤 관리를 결정하기 위한 상담을 진행할 것입니다. 균형 잡힌 스킨 케어 관리를 위해 매 4-6주마다 페이셜 어포인트먼트를 받는 것을 권장합니다.</li>
+							<li>이솝은 지역에 따라 35분, 60분, 75분 길이의 페이셜 어포인트먼트를 제공합니다. 35분 길이의 페이셜 어포인트먼트는 기존 이솝 제품을 이용하여 이루어집니다. 이 트리트먼트는 전 세계 선별된 이솝 매장에서 제공됩니다.</li>
+						</ul>
+						<a href="https://booking.naver.com/booking/6/bizes/337571">예약하기</a>
+					</div>
+					<div class="bar03">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -179,7 +286,7 @@
 				<h1 class="f25em">San Lorenzo in Lucina</h1>
 				<h3>Rome, Italy</h3>
 			</div>
-				<a href="http://taxonomyofdesign.com/#!/stores">Store</a>
+				<a href="http://taxonomyofdesign.com/#!/stores" class="storeModal">Store</a>
 			<div class="vWrap">
 				<video id="video" autoplay muted data-autoplay loop controls>
 					<source src="video/video02.mp4" type="video/mp4">
