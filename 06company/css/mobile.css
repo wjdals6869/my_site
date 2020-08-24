@@ -3,11 +3,11 @@
 
 /*header*/
 #header{position: relative;}
-#header.main{height:1600px;}
+#header.main{height:1550px;}
 
 #toggle_main_menu{
 	width: 350px;height: 100%;
-	background:#222;position: absolute;
+	background:#222;position: fixed;
 	right: -100%;z-index:2;padding:100px 0 0 60px;
 }
 #toggle_main_menu ul li{}
@@ -23,7 +23,7 @@
 
 .toggleMenu{
 	width: 25px;height: 25px;
-	position: absolute;
+	position: fixed;
 	right:50px;top: 50px;
 	z-index:5;cursor:pointer;
 }
@@ -120,13 +120,14 @@
 	top: 30%;color:white;
 	text-align: center;
 }
-.slider_wrap h3{font-size:2em;text-shadow:0 0 10px #000;}
+.slider_wrap h3{font-size:3em;text-shadow:0 0 10px #000;}
 .slider_wrap p{
+	display: none;
 	font-size:0.8em;text-shadow:0 0 10px #000;
 	width:300px;margin: 0 auto;
 }
 .slider_wrap h3:after{
-	content:"";display: block;width: 300px;height: 3px;
+	content:"";display: block;width: 250px;height: 3px;
 	background: #fff;margin: 20px auto;
 }
 

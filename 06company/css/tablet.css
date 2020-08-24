@@ -132,6 +132,7 @@
 		.content>ul>li.con3{
 			background:#fff;
 			padding: 58px;position: relative;
+			height: 384px;
 		}
 		.content>ul>li.con3:after{
 			content:"";

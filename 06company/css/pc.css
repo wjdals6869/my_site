@@ -13,10 +13,10 @@
 }
 #header_top h1{float: left;line-height: 60px;padding-left: 30px;}
 #header_top h1 a{color:white;font-weight:bold;}
-#header_top #main_menu{position: absolute;left: 50%;transform:translateX(-50%);}
-#main_menu>ul>li{float: left;}
+#header_top #main_menu{position: absolute;right: 5%;}
+#main_menu>ul>li{float: left;margin-right: 120px;}
 #main_menu a{
-	display: block;line-height: 60px;padding: 0 30px;
+	display: block;line-height: 60px;
 	color:white;font-weight:bold;
 }
 #main_menu a:after{
@@ -25,6 +25,7 @@
 }
 #main_menu a:hover:after{width: 100%;}
 #header_top .toggleMenu{
+	display: none;
 	width: 25px;height: 25px;
 	position: absolute;
 	right:30px;top: 20px;
@@ -55,8 +56,7 @@
 							right: -100%;
 						}
 						.menu.otop{right: 0;}
-
-
+#toggle_main_menu{display: none;}
 
 /*slider_wrap*/
 .slider_wrap ul li{height: 1005px;}
@@ -331,6 +331,7 @@
 	margin:5px 0 15px 0;
 }
 #bCast .container .bCastCon .bCastConT>h1{font-size:2.2em;}
+#bCast .container .bCastCon .bCastConT>p{display: none;}
 
 #bCast .container .bCastTxt{float: right;width: 498px;height: 246px;}
 #bCast .container .bCastTxt>p{font-size:1.1em;}
