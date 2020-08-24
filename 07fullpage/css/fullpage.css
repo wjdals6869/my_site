@@ -73,12 +73,12 @@ html.fp-enabled,
 .fp-controlArrow.fp-prev {
     left: 200px;
     width: 0;
-    border-width: 30px 30px 30px 0;
+    border-width: 25px 25px 25px 0;
     border-color: transparent #5a4a34 transparent transparent;
 }
 .fp-controlArrow.fp-next {
     right: 200px;
-    border-width: 30px 0 30px 30px;
+    border-width: 25px 0 25px 25px;
     border-color: transparent transparent transparent #5a4a34;
 }
 .fp-scrollable {

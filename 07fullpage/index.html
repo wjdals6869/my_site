@@ -18,48 +18,48 @@
 	<script>
 		$(function(){
 			$("#fullpage").fullpage({
-				anchors:["a1st","a2st","a3st","a4st"],
+				anchors:["a0st","a1st","a2st","a3st","a4st"],
 				menu:"#topMenu",
 				navigation:true,
 				slidesNavigation: true,
-				navigationTooltips: ['Product', 'Brand', 'Program', 'Store'],
+				navigationTooltips: ['Brand', 'Product', 'Story', 'Store', 'Program'],
 				showActiveTooltip: true,
 				navigationPosition:"right",
 				afterLoad:function(anchorsLink,index){
-					if(index ==1){
+					if(index ==2){
 						$("#onViewOne").addClass("move");
 					}else{
 						$("#onViewOne").removeClass("move")
 					}
-					if(index ==1){
+					if(index ==2){
 						$("#onViewOneTxt").addClass("move");
 					}else{
 						$("#onViewOneTxt").removeClass("move")
 					}
-					if(index ==2){
+					if(index ==3){
 						$("#onViewTwoTxt").addClass("move");
 					}else{
 						$("#onViewTwoTxt").removeClass("move")
 					}
-					if(index ==3){
-						$("#onViewThree").addClass("move");
-					}else{
-						$("#onViewThree").removeClass("move")
-					}
-					if(index ==3){	
-						$("#onViewThreeTxt").addClass("move");
-					}else{
-						$("#onViewThreeTxt").removeClass("move")
-					}
 					if(index ==4){	
-						$("#bg04Img").addClass("move");
+						$("#bg03Img").addClass("move");
 					}else{
-						$("#bg04Img").removeClass("move")
+						$("#bg03Img").removeClass("move")
+					}
+					if(index ==5){
+						$("#onViewFour").addClass("move");
+					}else{
+						$("#onViewFour").removeClass("move")
+					}
+					if(index ==5){	
+						$("#onViewFourTxt").addClass("move");
+					}else{
+						$("#onViewFourTxt").removeClass("move")
 					}
 				}
 			});
 
-
+			//view01
 			$(".view01_btn").click(function(){
 				$(".showView01").animate({right:0},500);
 			});
@@ -68,10 +68,39 @@
 				$(".showView01").animate({right:"-52%"},500);
 			});
 
-			
+
+			//view02
+			// view02_btn01
+			$(".view02_btn01").click(function(){
+				$(".showView02_01").animate({left:0},500);
+			});
+
+			$(".bar02_01").click(function(){
+				$(".showView02_01").animate({left:"-550px"},500);
+			});
+
+			// view02_btn02
+			$(".view02_btn02").click(function(){
+				$(".showView02_02").animate({left:0},500);
+			});
+
+			$(".bar02_02").click(function(){
+				$(".showView02_02").animate({left:"-550px"},500);
+			});
+
+			// view02_btn03
+			$(".view02_btn03").click(function(){
+				$(".showView02_03").animate({left:0},500);
+			});
+
+			$(".bar02_03").click(function(){
+				$(".showView02_03").animate({left:"-550px"},500);
+			});
 
 
-			var iSlider03 = $(".imgSlider03").bxSlider({
+
+
+			var iSlider04 = $(".imgSlider04").bxSlider({
 				controls:false,
 				pager:false,
 				slideWidth:1100
@@ -80,21 +109,21 @@
 
 
 
-			$(".nBtn03").click(function(){
-				iSlider03.goToNextSlide()
+			$(".nBtn04").click(function(){
+				iSlider04.goToNextSlide()
 			});
-			$(".pBtn03").click(function(){
-				iSlider03.goToPrevSlide()
+			$(".pBtn04").click(function(){
+				iSlider04.goToPrevSlide()
 			});
 
 
-			$(".view03_btn").click(function(){
-				$(".showView03").fadeIn();
-				iSlider03.reloadSlider();
+			$(".view04_btn").click(function(){
+				$(".showView04").fadeIn();
+				iSlider04.reloadSlider();
 
 			});
-			$(".bar03").click(function(){
-				$(".showView03").hide();
+			$(".bar04").click(function(){
+				$(".showView04").fadeOut();
 			});
 
 
@@ -104,6 +133,9 @@
 				innerWidth:1000,
 				innerHeight:700
 			});
+
+
+
 		});
 	</script>
 </head>
@@ -111,14 +143,21 @@
 	<nav id="navTop">
 		<a href="#a1st"><img src="images/logo.png" alt="" class="logo"></a>
 		<ul id="topMenu" class="clearfix">
+			<li data-menuanchor="a0st"><a href="#a0st">Brand</a></li>
 			<li data-menuanchor="a1st"><a href="#a1st">Product</a></li>
-			<li data-menuanchor="a2st"><a href="#a2st">Brand</a></li>
-			<li data-menuanchor="a3st"><a href="#a3st">Program</a></li>
-			<li data-menuanchor="a4st"><a href="#a4st">Store</a></li>
+			<li data-menuanchor="a2st"><a href="#a2st">Story</a></li>
+			<li data-menuanchor="a3st"><a href="#a3st">Store</a></li>
+			<li data-menuanchor="a4st"><a href="#a4st">Program</a></li>
 		</ul>
 	</nav>
 
 	<div id="fullpage">
+		<div class="section" id="page0" data-anchor="a0st"><!-- 00 -->
+			<video id="video00" autoplay="true" muted data-autoplay loop>
+				<source src="video/AESOP02.mp4" type="video/mp4">
+			</video>
+			<div class="bg00"></div>
+		</div>
 
 		<div class="section" id="page1" data-anchor="a1st"><!-- 01 -->
 			<div class="main" id="onViewOne">
@@ -154,25 +193,20 @@
 
 		<div class="section" id="page2" data-anchor="a2st"><!-- 02 -->
 			<div class="slide">
-				<div class="view01">
+				<div class="view01" id="sView">
 					<ul class="clearfix">
 						<li class="left" id="onViewTwoTxt">
 							<p class="p00">Brand Story</p>
 							<p class="p01">이솝은 세심하게 고안된 효과적이면서도, 감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다.</p>
 							<p class="p02">이솝은 1987년에 설립되었고 멜버른에 본사를 두고 있으며, 세계 다수 지역에 사무실과 스토어를 보유하고 있습니다.최고 품질의 스킨, 헤어 그리고 바디케어 제품을 만들어 내는 것이 변함없는 이솝의 목표입니다. 우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해 폭넓은 조사를 하며, 반드시 효능과 안전성이 입증된 성분만을 사용합니다. 전문적인 지식을 가진 컨설턴트들은 하나하나 개성적인 이솝 매장에서 제품라인을 소개하고, 고객이 적합한 제품을 고를 수 있도록 안내해 드릴 수 있어 매우 기쁩니다.</p>
-							<a href="#" class="view02_btn">이솝의 제품 철학</a>
+							<a href="#" class="view02_btn01">이솝의 제품 철학</a>
 						</li>
-						<script>
-							$(".view02_btn").click(function(){
-								$(".showView02").animate({left:0},500);
-							});
-
-							// $(".view02_btn").click(function(){
-							// 	$(".showView02").animate({left:"-500px"},500);
-							// });
-						</script>
 						<li class="right">
-							<div class="showView02">
+							<div class="showView02_01">
+								<div class="bar02_01">
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+								</div>
 								<ul class="clearfix">
 									<li class="p01">
 										<p>세심한 열정</p>
@@ -181,106 +215,73 @@
 										<p>이솝은 초기부터 제품 연구개발에 매우 독특한 접근 방식을 적용해왔습니다. 이솝의 숙련된 화학자들은 본사에 위치한 실용적이고 맞춤화 되어 있는 연구소에서 제품 아이디어를 내고, 배합에 대해 연구하고 견본을 만듭니다. 이솝은 세계 최고의 공급 업체로부터 조달 받은 원료에 최첨단 기술을 적용하고 오랜 과학적 경험과 원칙에 따라 최고 품질의 제품으로 탄생시킵니다.이솝은 고객이 표현한 니즈에 그대로 부합하는 제품만을 출시하고 심도 깊은 조사 후에 가장 높은 품질과 효능이 담긴 제품을 제공합니다.</p>
 									</li>
 								</ul>
-								<div class="showView02Img">
+								<div class="showView02Img_01">
 									<div class="p03">
 										<h3 class="p03_1">‘ The merit of originality is not novelty<br>; it is sincerity. ’</h3>
 										<p class="p03_2">Thomas Carlyle</p>
 									</div>
 								</div>
-
-								
-								
 							</div>
 						</li>
 					</ul>					
 				</div>
 			</div>
 			<div class="slide">
-				<div class="view02">
+				<div class="view02" id="sView">
 					<ul class="clearfix">
 						<li class="left">
 							<p class="p00">Brand Design</p>
-							<p class="p01">‘It is your duty in life to save your dream.’</p>
+							<p class="p01">기능과 환경에 대한 배려 깊은 소통</p>
 							<p class="p02">이솝은 사려깊은 디자인이 우리 삶의 질을 높인다는 확고한 믿음이 있습니다.이솝은 지적이고 지속 가능한 디자인에 대하여 진정성 있는 관심을 가지고 있으며, 이는 이솝의 모든 분야로 이어집니다. 모든 제품 성분에 세심한 연구가 기본이 되듯, 제품 용기를 선택할 때 또한 쉽게 사용할 수 있고 우리 눈에도 아름다우면서도 실용성을 중시한 용기들을 선택하고 있습니다.이솝은 새로운 스토어 오픈을 준비할 때 이미 그 장소에 있는 것을 어떻게 활용하고 협력할 것인지 가장 먼저 염두에 둡니다. 지역과 어울리지 않는 공간이 되기보다는, 그 지역의 거리 속 한 구성원으로 조화롭게 가치를 더하는 것이 우리의 진정한 의의입니다. 따라서 지역과 연관성 있는 디자인 요소를 활용하기 위해 심혈을 기울입니다.</p>
-							<a href="#">이솝의 디자인 철학</a>
+							<a href="#" class="view02_btn02">이솝의 디자인 철학</a>
 						</li>
 						<li class="right">
+							<div class="showView02_02">
+								<div class="bar02_02">
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+								</div>
+								<ul class="clearfix">
+									<li class="p01">
+										<p>사려깊은 디자인</p>
+									</li>
+									<li class="p02">
+										<p>이솝은 새로운 스토어 오픈을 준비할 때 이미 그 장소에 있는 것을 어떻게 활용하고 협력할 것인지 가장 먼저 염두에 둡니다. 지역과 어울리지 않는 공간이 되기보다는, 그 지역의 거리 속 한 구성원으로 조화롭게 가치를 더하는 것이 우리의 진정한 의의입니다. 따라서 지역과 연관성 있는 디자인 요소를 활용하기 위해 심혈을 기울입니다.</p>
+									</li>
+								</ul>
+								<div class="showView02Img_02">
+									<div class="p03">
+										<h3 class="p03_1">‘It is your duty in life to save your dream.’</h3>
+										<p class="p03_2">Thomas Carlyle</p>
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="slide">
-				<div class="view03">
+				<div class="view03" id="sView">
 					<ul class="clearfix">
 						<li class="left">
 							<p class="p00">Aesop Store</p>
 							<p class="p01">이솝은 지적이고 지속가능한 디자인에 대하여 진정성 있는 관심을 가지고 있으며 이는 이솝의 모든 분야로 이어집니다.</p>
 							<p class="p02">새로운 지역을 고려할 때 이 지역과 어울리지 않는 공간이 되기보다는 그 지역의 거리에 어울리는 한 구성원으로 조화롭게 가치를 더하는 것이 우리의 진정한 의의입니다.이솝은 2004년 멜버른 교외의 세인트 킬다 작은 지하 코너에서 최초의 고객을 맞이했습니다. 이곳은 지하 주차장으로 이어지는 좁은 비탈길에 위치한 작은 스토어였지만, 현재는 이솝 건축과 디자인의 기준점이 되었습니다. 이솝은 새로운 매장 오픈을 준비할 때 이미 그 장소에 있는 것을 어떻게 활용하고 협력할지를 가장 먼저 염두에 둡니다. 또한 과거, 현재, 미래에 대한 고민을 함께 하며 조심스럽게 스토어 오픈을 계획합니다.</p>
-							<a href="#">이솝 매장 찾기</a>
+							<a href="#" class="view02_btn03">이솝 매장 찾기</a>
 						</li>
 						<li class="right">
+							
 						</li>
 					</ul>
 				</div>
 			</div>
-			<video id="video02" autoplay muted data-autoplay loop controls>
-				<source src="video/AESOP02.mp4" type="video/mp4">
-			</video>
 		</div>
 
-		<div class="section" id="page3" data-anchor="a3st"><!-- 03 -->
-			<div class="main" id="onViewThree">
-				<img src="images/img02.png" alt="">
-			</div>
-			<div class="mainTxt03" id="onViewThreeTxt">
-				<p>피부와 심신의 안정</p>
-				<h3>Facial Appointment</h3>
-				<p>균형잡힌 스킨케어 관리를 위해 이솝 페이셜 어포인트먼트는<br>피부에 생기와 집중적인 영양을 공급하는 맞춤관리를 제공합니다.</p>
-				<a href="#" class="view03_btn">More</a>
-			</div>
-			<div class="showView03">
-				<div class="showViewBox03">
-					<div class="imgSlider03_wrap">
-						<ul class="imgSlider03">
-							<li>
-								<img src="images/img11.jpg" alt="">
-							</li>
-							<li>
-								<img src="images/img12.jpg" alt="">
-							</li>
-							<li>
-								<img src="images/img13.jpg" alt="">
-							</li>
-						</ul>
-						<div class="btn03">
-							<div class="nBtn03">
-								<img src="images/btn_next02.png" alt="" class="nBtn">
-							</div>
-							<div class="pBtn03">
-								<img src="images/btn_prev02.png" alt="" class="pBtn">
-							</div>
-						</div>
-					</div>
-					<div class="showView03Txt">
-						<h3>‘ Touch has a memory. ’</h3>
-						<p>John Keats</p>
-						<ul>
-							<li>이솝 페이셜 어포인트먼트는 피부의 균형과 집중적인 영양 공급을 위한 이솝만의 다양한 트리트먼트를 제공합니다. 숙련된 페이셜 트리트먼트 담당 직원은 리드미컬하고 유려한 동작과 섬세한 압력으로 이솝 포뮬레이션이 잘 흡수될 수 있도록 피부를 관리해줍니다.</li>
-							<li>트리트먼트를 진행하기에 앞서 담당 직원이 고객님께서 트리트먼트를 받는 목적과 다양한 피부 고민을 바탕으로 고객님께 가장 적합한 맞춤 관리를 결정하기 위한 상담을 진행할 것입니다. 균형 잡힌 스킨 케어 관리를 위해 매 4-6주마다 페이셜 어포인트먼트를 받는 것을 권장합니다.</li>
-							<li>이솝은 지역에 따라 35분, 60분, 75분 길이의 페이셜 어포인트먼트를 제공합니다. 35분 길이의 페이셜 어포인트먼트는 기존 이솝 제품을 이용하여 이루어집니다. 이 트리트먼트는 전 세계 선별된 이솝 매장에서 제공됩니다.</li>
-						</ul>
-						<a href="https://booking.naver.com/booking/6/bizes/337571">예약하기</a>
-					</div>
-					<div class="bar03">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="section" id="page4" data-anchor="a4st"><!-- 04 -->
-			<div class="bg04" id="bg04Img"></div>
+
+
+		<div class="section" id="page3" data-anchor="a3st"><!-- 04 -->
+			<div class="bg03" id="bg03Img"></div>
 			<div class="vTxt">
 				<h3>Aesop Store</h3>
 				<h1 class="f25em">San Lorenzo in Lucina</h1>
@@ -292,8 +293,64 @@
 					<source src="video/video02.mp4" type="video/mp4">
 				</video>
 			</div>
-		</div>			
+		</div>
+
+
+
+		<div class="section" id="page4" data-anchor="a4st"><!-- 03 -->
+			<div class="main" id="onViewFour">
+				<img src="images/img02.png" alt="">
+			</div>
+			<div class="mainTxt04" id="onViewFourTxt">
+				<p>피부와 심신의 안정</p>
+				<h3>Facial Appointment</h3>
+				<p>균형잡힌 스킨케어 관리를 위해 이솝 페이셜 어포인트먼트는<br>피부에 생기와 집중적인 영양을 공급하는 맞춤관리를 제공합니다.</p>
+				<a href="#" class="view04_btn">More</a>
+			</div>
+			<div class="showView04">
+				<div class="showViewBox04">
+					<div class="imgSlider04_wrap">
+						<ul class="imgSlider04">
+							<li>
+								<img src="images/img11.jpg" alt="">
+							</li>
+							<li>
+								<img src="images/img12.jpg" alt="">
+							</li>
+							<li>
+								<img src="images/img13.jpg" alt="">
+							</li>
+						</ul>
+						<div class="btn04">
+							<div class="nBtn04">
+								<img src="images/btn_next02.png" alt="" class="nBtn">
+							</div>
+							<div class="pBtn04">
+								<img src="images/btn_prev02.png" alt="" class="pBtn">
+							</div>
+						</div>
+					</div>
+					<div class="showView04Txt">
+						<h3>‘ Touch has a memory. ’</h3>
+						<p>John Keats</p>
+						<ul>
+							<li>이솝 페이셜 어포인트먼트는 피부의 균형과 집중적인 영양 공급을 위한 이솝만의 다양한 트리트먼트를 제공합니다. 숙련된 페이셜 트리트먼트 담당 직원은 리드미컬하고 유려한 동작과 섬세한 압력으로 이솝 포뮬레이션이 잘 흡수될 수 있도록 피부를 관리해줍니다.</li>
+							<li>트리트먼트를 진행하기에 앞서 담당 직원이 고객님께서 트리트먼트를 받는 목적과 다양한 피부 고민을 바탕으로 고객님께 가장 적합한 맞춤 관리를 결정하기 위한 상담을 진행할 것입니다. 균형 잡힌 스킨 케어 관리를 위해 매 4-6주마다 페이셜 어포인트먼트를 받는 것을 권장합니다.</li>
+							<li>이솝은 지역에 따라 35분, 60분, 75분 길이의 페이셜 어포인트먼트를 제공합니다. 35분 길이의 페이셜 어포인트먼트는 기존 이솝 제품을 이용하여 이루어집니다. 이 트리트먼트는 전 세계 선별된 이솝 매장에서 제공됩니다.</li>
+						</ul>
+						<a href="https://booking.naver.com/booking/6/bizes/337571">예약하기</a>
+					</div>
+					<div class="bar04">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
+
+
 	<div class="section fp-auto-height" data-anchor="a5st">
 		<div class="footer" style="height:300px;background-color:skyblue;"></div>
 	</div>
