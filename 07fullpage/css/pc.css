@@ -27,7 +27,7 @@ html,body{font-family: 'Lora', serif;}
 
 /*nav*/
 nav#navTop{
-	position: fixed;z-index:1;width: 100%;
+	position: fixed;z-index:1;width: 100%;height: 130px;
 }
 nav#navTop img.logo{position: absolute;top: 40px;left: 60px;}
 nav#navTop ul{position: absolute;right: 60px;top: 40px;}
@@ -61,6 +61,15 @@ nav#navTop li a:hover:after{width: 100%;}
 }
 
 /*page00*/
+.page0Txt{
+	position: absolute;
+	right: 15%;
+	color:#fff;z-index:5;
+	font-family: 'Noto Sans KR', sans-serif;
+	text-align: right;
+}
+.page0Txt h3{font-size:3em;padding-bottom: 20px;}
+.page0Txt p{font-size:1.2em;}
 #page0 .bg00{
 	position: absolute;top: 0;
 	width: 100%;height: 100%;background:rgba(0,0,0,0.6);}
@@ -260,7 +269,7 @@ nav#navTop li a:hover:after{width: 100%;}
 .slide .view02 ul li.right,
 .slide .view03 ul li.right{
 	right: 30px;
-	border: 2px solid #000;
+	_border: 2px solid #000;
 	float: right;width: 550px;height: 650px;
 	_background-size:cover;position: relative;
 	overflow: hidden;
@@ -498,6 +507,14 @@ nav#navTop li a:hover:after{width: 100%;}
 	left:50%;top:50%;
 	transform:translate(-50%,-50%) rotate(45deg);
 }
+
+.footer{
+	position: relative;padding: 60px;
+	height:200px;background-color:#333;color:#fff;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.footer p{position: absolute;left: 10%;}
+.footer address{position: absolute;right: 10%;width: 790px;font-style: normal;}
 
 
 

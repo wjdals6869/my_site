@@ -18,14 +18,19 @@
 	<script>
 		$(function(){
 			$("#fullpage").fullpage({
-				anchors:["a0st","a1st","a2st","a3st","a4st"],
+				anchors:["a0st","a1st","a2st","a3st","a4st","a5st"],
 				menu:"#topMenu",
 				navigation:true,
 				slidesNavigation: true,
-				navigationTooltips: ['Brand', 'Product', 'Story', 'Store', 'Program'],
+				navigationTooltips: ['Brand', 'Product', 'Story', 'Store', 'Program', 'Company'],
 				showActiveTooltip: true,
 				navigationPosition:"right",
 				afterLoad:function(anchorsLink,index){
+					if(index ==1){
+						$("#navTop").css("background","#ffac36").css("opacity","0.7").css("transition","0.5s");
+					}else{
+						$("#navTop").css("background","none").css("opacity","1");
+					}
 					if(index ==2){
 						$("#onViewOne").addClass("move");
 					}else{
@@ -153,6 +158,10 @@
 
 	<div id="fullpage">
 		<div class="section" id="page0" data-anchor="a0st"><!-- 00 -->
+			<div class="page0Txt">
+				<h3>이솝 Aesop</h3>
+				<p>이솝은 세심하게 고안된 효과적이면서도,<br>감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다.</p>
+			</div>
 			<video id="video00" autoplay="true" muted data-autoplay loop>
 				<source src="video/AESOP02.mp4" type="video/mp4">
 			</video>
@@ -347,12 +356,16 @@
 				</div>
 			</div>
 		</div>
+		<div class="section fp-auto-height" data-anchor="a5st">
+			<div class="footer">
+				<p>ⓒAesop</p>
+				<address>상호: 이솝코리아 유한회사 | 주소: 서울특별시 강남구 선릉로 162길 3 이솝코리아 3층 | 대표자: 마이클안토니오키프 | 대표전화: 1800-1987 | 대표 이메일: aesop@aesop.com | 호스팅 사업자: SAP Hybris | 사업자 등록 번호: 220-88-56014 | 통신판매업 신고번호: 2014-서울강남-02300</address>
+			</div>
+		</div>
 	</div>
 
 
 
-	<div class="section fp-auto-height" data-anchor="a5st">
-		<div class="footer" style="height:300px;background-color:skyblue;"></div>
-	</div>
+	
 </body>
 </html>
