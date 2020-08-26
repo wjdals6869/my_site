@@ -390,6 +390,13 @@
 
 /*sub01_style*/
 /*#subHeader.sub01{height: 500px;}*/
+
+.sub_toggleMenu{display: none}
+#sub_toggle_main_menu{display: none}
+
+
+
+
 .sVisual_01{
 	width: 100%;height: 500px;position: relative;
 	background-image: url(../images/mgz03.jpg);
