@@ -280,7 +280,7 @@ nav#navTop li a:hover:after{width: 100%;}
 
 .showView02_01,
 .showView02_02{
-	left: -550px;
+	display: none;
 	position: absolute;
 	width: 100%;height: 100%;
 	/*background:#ede1d5;*/
