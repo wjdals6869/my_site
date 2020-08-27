@@ -28,11 +28,11 @@
 				showActiveTooltip: true,
 				navigationPosition:"right",
 				afterLoad:function(anchorsLink,index){
-					if(index ==1){
-						$("#navTop").css("background","#ffac36").css("opacity","0.7").css("transition","0.5s");
-					}else{
-						$("#navTop").css("background","none").css("opacity","1");
-					}
+					// if(index ==1){
+					// 	$("#navTop").css("background","#ffac36").css("opacity","0.7").css("transition","0.5s");
+					// }else{
+					// 	$("#navTop").css("background","none").css("opacity","1");
+					// }
 					if(index ==2){
 						$("#onViewOne").addClass("move");
 					}else{
@@ -72,7 +72,7 @@
 			});
 
 			$(".bar01").click(function(){
-				$(".showView01").animate({right:"-52%"},500);
+				$(".showView01").animate({right:"-100%"},500);
 			});
 
 
@@ -138,7 +138,7 @@
 			$(".storeModal").colorbox({
 				iframe:true,
 				innerWidth:330,
-				innerHeight:600
+				innerHeight:500
 			});
 
 
@@ -167,6 +167,7 @@
 			<video id="video00" autoplay="true" muted data-autoplay loop>
 				<source src="video/AESOP02.mp4" type="video/mp4">
 			</video>
+			<div class="hBg"></div>
 			<div class="bg00"></div>
 		</div>
 
@@ -294,7 +295,7 @@
 			<div class="bg03" id="bg03Img"></div>
 			<div class="vTxt">
 				<h3>Aesop Store</h3>
-				<h1 class="f15em">San Lorenzo in Lucina</h1>
+				<h1>San Lorenzo in Lucina</h1>
 				<h3>Rome, Italy</h3>
 			</div>
 				<a href="http://taxonomyofdesign.com/#!/stores" class="storeModal">Store</a>
