@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!-- meta:vp -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>fullpage</title>
@@ -78,20 +79,20 @@
 			//view02
 			// view02_btn01
 			$(".view02_btn01").click(function(){
-				$(".showView02_01").animate({left:0},500);
+				$(".showView02_01").fadeIn();
 			});
 
 			$(".bar02_01").click(function(){
-				$(".showView02_01").animate({left:"-550px"},500);
+				$(".showView02_01").fadeOut();
 			});
 
 			// view02_btn02
 			$(".view02_btn02").click(function(){
-				$(".showView02_02").animate({left:0},500);
+				$(".showView02_02").fadeIn();
 			});
 
 			$(".bar02_02").click(function(){
-				$(".showView02_02").animate({left:"-550px"},500);
+				$(".showView02_02").fadeOut();
 			});
 
 			// view02_btn03
@@ -136,8 +137,8 @@
 
 			$(".storeModal").colorbox({
 				iframe:true,
-				innerWidth:1000,
-				innerHeight:700
+				innerWidth:330,
+				innerHeight:600
 			});
 
 
@@ -277,7 +278,6 @@
 							<p class="p00">Aesop Store</p>
 							<p class="p01">이솝은 지적이고 지속가능한 디자인에 대하여 진정성 있는 관심을 가지고 있으며 이는 이솝의 모든 분야로 이어집니다.</p>
 							<p class="p02">새로운 지역을 고려할 때 이 지역과 어울리지 않는 공간이 되기보다는 그 지역의 거리에 어울리는 한 구성원으로 조화롭게 가치를 더하는 것이 우리의 진정한 의의입니다.이솝은 2004년 멜버른 교외의 세인트 킬다 작은 지하 코너에서 최초의 고객을 맞이했습니다. 이곳은 지하 주차장으로 이어지는 좁은 비탈길에 위치한 작은 스토어였지만, 현재는 이솝 건축과 디자인의 기준점이 되었습니다. 이솝은 새로운 매장 오픈을 준비할 때 이미 그 장소에 있는 것을 어떻게 활용하고 협력할지를 가장 먼저 염두에 둡니다. 또한 과거, 현재, 미래에 대한 고민을 함께 하며 조심스럽게 스토어 오픈을 계획합니다.</p>
-							<a href="#" class="view02_btn03">이솝 매장 찾기</a>
 						</li>
 						<li class="right">
 							
@@ -294,7 +294,7 @@
 			<div class="bg03" id="bg03Img"></div>
 			<div class="vTxt">
 				<h3>Aesop Store</h3>
-				<h1 class="f25em">San Lorenzo in Lucina</h1>
+				<h1 class="f15em">San Lorenzo in Lucina</h1>
 				<h3>Rome, Italy</h3>
 			</div>
 				<a href="http://taxonomyofdesign.com/#!/stores" class="storeModal">Store</a>
