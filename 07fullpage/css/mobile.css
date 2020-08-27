@@ -4,7 +4,7 @@ html,body{font-family: 'Lora', serif;}
 #page0{background-image: url(../images/bg01.jpg);}
 #page1{background-image: url(../images/bg01.jpg);}
 #page2{_background-image: url(../images/bg04.jpg);}
-#page3{background: wheat;}
+#page3{/*background: wheat;*/}
 #bg03Img{
 	width: 100%;height: 100%;
 	background-image: url(../images/bg07.png);
@@ -12,9 +12,9 @@ html,body{font-family: 'Lora', serif;}
 	background-position: center;
 	background-size:cover;
 	position: absolute;
-	transition:1s;opacity:1;top: 0;
+	transition:1s;opacity:0.7;top: 0;
 }
-#bg03Img.move{opacity:0.8;}
+/*#bg03Img.move{opacity:0.7;}*/
 #page4{background: #fffef2;_background-image: url(../images/bg01.jpg);}
 
 /*section*/
