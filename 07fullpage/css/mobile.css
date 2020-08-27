@@ -12,7 +12,7 @@ html,body{font-family: 'Lora', serif;}
 	background-position: center;
 	background-size:cover;
 	position: absolute;
-	transition:1s;opacity:0.7;top: 0;
+	transition:1s;opacity:0.8;top: 0;
 }
 /*#bg03Img.move{opacity:0.7;}*/
 #page4{background: #fffef2;_background-image: url(../images/bg01.jpg);}
