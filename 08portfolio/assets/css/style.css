@@ -11,7 +11,8 @@
 body {
   background: #fff;
   color: #444;
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
 }
 li{list-style:none;}
 a {
@@ -32,7 +33,8 @@ p {
 .clearfix:after{content:"";display: block;clear: both;}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -42,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #548e6b;
+  background: #366cf5;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -180,8 +182,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1;
   font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  letter-spacing: 1px;
+  /*text-transform: uppercase;*/
 }
 
 #header .logo a {
@@ -230,9 +232,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0;
   transition: 0.3s;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  /*text-transform: uppercase;*/
+  font-weight: 400;
 }
 
 .main-nav a:hover, .main-nav .active > a, .main-nav li:hover > a {
@@ -240,69 +243,6 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-.main-nav .drop-down ul {
-  display: block;
-  position: absolute;
-  left: 15px;
-  top: calc(100% - 30px);
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  padding: 10px 0;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: ease all 0.3s;
-}
-
-.main-nav .drop-down:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.main-nav .drop-down li {
-  min-width: 180px;
-  position: relative;
-}
-
-.main-nav .drop-down ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: none;
-  color: #065e77;
-}
-
-.main-nav .drop-down ul a:hover, .main-nav .drop-down ul .active > a, .main-nav .drop-down ul li:hover > a {
-  color: #1bb1dc;
-}
-
-.main-nav .drop-down > a:after {
-  content: "\f107";
-  font-family: FontAwesome;
-  padding-left: 10px;
-}
-
-.main-nav .drop-down .drop-down ul {
-  top: 0;
-  left: calc(100% - 30px);
-}
-
-.main-nav .drop-down .drop-down:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-}
-
-.main-nav .drop-down .drop-down > a {
-  padding-right: 35px;
-}
-
-.main-nav .drop-down .drop-down > a:after {
-  content: "\f105";
-  position: absolute;
-  right: 15px;
-}
 
 /* Mobile Navigation */
 .mobile-nav {
@@ -462,7 +402,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .intro-info .btn-get-started, #hero .intro-info .btn-publishing {
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
@@ -491,11 +432,12 @@ section {
 --------------------------------*/
 .section-header h3 {
   font-size: 36px;
-  color: #413e66;
+  color: #366cf5;
   text-align: center;
   font-weight: 700;
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
 }
 
 .section-header p {
@@ -532,8 +474,9 @@ section {
 }
 
 #about .about-content h2 {
-  color: #413e66;
-  font-family: "Montserrat", sans-serif;
+  color: #f36545;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
@@ -693,7 +636,7 @@ section {
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #548e6b;
+  color: #366cf5;
 
 }
 
@@ -903,7 +846,8 @@ section {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   color: #333;
   font-weight: 400;
   letter-spacing: 3px;
@@ -914,7 +858,8 @@ section {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
+  /*font-family: "Montserrat", sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   color: #333;
 }
 

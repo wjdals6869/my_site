@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>college</title>
+	<title>HKU</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
@@ -14,7 +14,17 @@
 		$(document).ready(function(){
 			$(".vSlider").bxSlider({pager:false});
 			$(".bSlider").bxSlider({controls:false,auto:true});
-			$(".tSlider").bxSlider({controls:false,auto:true,pager:false});
+			// $(".tSlider").bxSlider({controls:false,auto:true,pager:false});
+
+			var tslider = $(".tSlider").bxSlider({
+				controls:false,mode:"vertical",pager:false
+			});
+			$(".up").click(function(){
+				tslider.goToPrevSlide()
+			});
+			$(".down").click(function(){
+				tslider.goToNextSlide()
+			});
 		});
 	</script>
 </head>
@@ -202,8 +212,8 @@
 			</li>
 		</ul>
 		<div class="button">
-		    <a href="#" class="up"><img src="images/up_icon.png" alt=""></a>
-		    <a href="#" class="down"><img src="images/down_icon.png" alt=""></a>
+		    <div class="up"><img src="images/up_icon.png" alt=""></div>
+		    <div class="down"><img src="images/down_icon.png" alt=""></div>
 		</div>
 	</div>
 </div>
