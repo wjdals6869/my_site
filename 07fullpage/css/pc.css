@@ -98,7 +98,7 @@ nav#navTop li a:hover:after{width: 100%;}
 	transform:translateX(-50%);top: 32%;
 	color:#333;text-align: left;
 }
-.mainTxt01 h3{font-size:3.5em;padding-bottom: 20px;}
+.mainTxt01 h3{font-size:2.5em;padding-bottom: 20px;}
 .mainTxt01 p{
 	margin-bottom: 20px;
 	font-family: 'Noto Sans KR', sans-serif;
@@ -121,7 +121,7 @@ nav#navTop li a:hover:after{width: 100%;}
 
 #onViewOneTxt{
 	position: absolute;right: 0;
-	transition:0.8s;opacity:0;
+	transition:0.8s;opacity:0;padding-left: 50px;
 }
 #onViewOneTxt.move{right: 7%;opacity:1;}
 
@@ -278,7 +278,6 @@ nav#navTop li a:hover:after{width: 100%;}
 .slide .view02 ul li.right,
 .slide .view03 ul li.right{
 	right: 30px;
-	_border: 2px solid #000;
 	float: right;width: 550px;height: 650px;
 	_background-size:cover;position: relative;
 	overflow: hidden;
