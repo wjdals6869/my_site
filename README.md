@@ -7,3 +7,4 @@ my test site
 * 05 tour - https://wjdals6869.github.io/my_site/05tour
 * 06 company - https://wjdals6869.github.io/my_site/06company
 * 07 fullpage - https://wjdals6869.github.io/my_site/07fullpage
+* 08 portfolio - https://wjdals6869.github.io/my_site/njmportfolio
